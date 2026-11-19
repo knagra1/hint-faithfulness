@@ -92,6 +92,7 @@ Two rules govern interpretation. Any cell with fewer than 20 switches is reporte
 data/questions.json      frozen 150-question sample
 data/judge_labels.csv    hand labels for judge validation
 src/hints.py             hint wording, prompt construction, answer parsing
+src/make_questions.py    one-off script that builds data/questions.json
 src/task.py              Inspect task and scorer
 src/judge.py             LLM judge
 src/analyse.py           eligibility, rates, confidence intervals
