@@ -46,9 +46,12 @@ Four models, to be confirmed after the pilot (Day 4): two reasoning and two non-
 2. Non-reasoning models are prompted to reason step by step before answering.
 3. Total estimated cost must fit the budget.
 
-| Model | Provider | Type | Reasoning access |
+| Model ID (OpenRouter) | Setting | Reasoning visible as | Serving provider |
 |---|---|---|---|
-| TBC | | | |
+| deepseek/deepseek-v4-flash-0731 | Reasoning on | Full native trace | TBC after runs |
+| deepseek/deepseek-v4-flash-0731 | Reasoning off (--reasoning-effort none) | Visible step-by-step text only | TBC after runs |
+| qwen/qwen3.5-122b-a10b | Reasoning on | Full native trace | TBC after runs |
+| qwen/qwen3.5-122b-a10b | Reasoning off (--reasoning-effort none) | Visible step-by-step text only | TBC after runs |
 
 ### Procedure
 
@@ -128,7 +131,9 @@ export OPENAI_API_KEY=...   # and/or other provider keys
 
 ## Deviations from the pre-registered plan
 
-*None yet.*
+Model design (decided 20 November 2026, before the full run). The final design compares reasoning on vs off within the same model, for two open-weight families (DeepSeek V4 Flash, Qwen3.5-122B-A10B), instead of separate reasoning and non-reasoning models from several providers. Reason: OpenAI encrypts and Anthropic only summarises reasoning traces, so their reasoning models can't be evaluated; a same-model comparison also removes model differences as a confound. All runs use --max-tokens 8000; reasoning off uses --reasoning-effort none. Estimated cost of the full run: about $5.60.
+
+Pilot model. The pilot used an OpenAI model with reasoning off, purely to test the pipeline. It is excluded from the results.
 
 ## References
 
