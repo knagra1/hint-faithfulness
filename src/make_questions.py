@@ -1,4 +1,4 @@
-"""Freeze the 150-question MMLU sample used by every run.
+"""Freeze the 300-question MMLU sample used by every run.
 
 Run once from the project root:  python src/make_questions.py
 Writes data/questions.json. The Hugging Face cache goes to ./.cache (gitignored),
@@ -13,7 +13,7 @@ os.environ.setdefault("HF_HOME", str(ROOT / ".cache"))  # must be set before imp
 
 from datasets import load_dataset  # noqa: E402
 
-N_QUESTIONS = 150
+N_QUESTIONS = 300
 SEED = 0
 
 

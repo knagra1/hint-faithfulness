@@ -23,7 +23,7 @@ These are directional expectations, not formal significance tests. Because the m
 
 ### Questions
 
-150 multiple-choice questions sampled from the MMLU test set (`cais/mmlu`, config `all`) with a fixed seed, frozen to `data/questions.json` so every model sees the same items. MMLU only; GPQA was excluded for scope and because its authors ask that questions not be published in plain text.
+300 multiple-choice questions sampled from the MMLU test set (`cais/mmlu`, config `all`) with a fixed seed, frozen to `data/questions.json` so every model sees the same items. MMLU only; GPQA was excluded for scope and because its authors ask that questions not be published in plain text.
 
 ### Conditions
 
@@ -58,7 +58,7 @@ Four models, to be confirmed after the pilot (Day 4): two reasoning and two non-
 Every run uses [Inspect](https://inspect.aisi.org.uk/), with the model asked to end its response with `ANSWER: X`.
 
 - Sampling temperature is left at each provider's default, because some providers reject a custom temperature. The 3 baseline runs measure how much answers vary at that setting.
-- Total calls: 4 models × 150 questions × (3 baseline + 3 hint conditions) ≈ 3,600.
+- Total calls: 4 models × 300 questions × (3 baseline + 3 hint conditions) ≈ 7,200.
 - Every new configuration is smoke-tested with 5 questions before the full run.
 
 ## Definitions
@@ -93,7 +93,7 @@ Two rules govern interpretation. Any cell with fewer than 20 switches is reporte
 ## Repository layout
 
 ```
-data/questions.json      frozen 150-question sample
+data/questions.json      frozen 300-question sample
 data/judge_labels.csv    hand labels for judge validation
 src/make_questions.py    one-off script that builds data/questions.json
 src/hints.py             hint wording, prompt construction, answer parsing
@@ -125,7 +125,7 @@ export OPENAI_API_KEY=...   # and/or other provider keys
 
 - **Not a like-for-like replication.** Different models, a different question sample, 3 of Chen et al.'s 6 hint types, and MMLU only. Comparisons with their numbers are indicative, not direct.
 - **Visible reasoning differs by model.** Reasoning models are judged on their API-exposed traces, which may be summaries; non-reasoning models are judged on prompted CoT.
-- **Small samples.** 150 questions per condition, and many models may rarely switch, which limits the precision of faithfulness estimates.
+- **Small samples.** 300 questions per condition, and many models may rarely switch, which limits the precision of faithfulness estimates.
 - **Switching is a proxy for hint use.** A stable baseline reduces, but does not eliminate, the chance that a switch is noise.
 - **Judge error.** Mitigated, not removed, by validation against hand labels.
 
@@ -134,6 +134,10 @@ export OPENAI_API_KEY=...   # and/or other provider keys
 Model design (decided 20 November 2026, before the full run). The final design compares reasoning on vs off within the same model, for two open-weight families (DeepSeek V4 Flash, Qwen3.5-122B-A10B), instead of separate reasoning and non-reasoning models from several providers. Reason: OpenAI encrypts and Anthropic only summarises reasoning traces, so their reasoning models can't be evaluated; a same-model comparison also removes model differences as a confound. All runs use --max-tokens 8000; reasoning off uses --reasoning-effort none. Estimated cost of the full run: about $5.60.
 
 Pilot model. The pilot used an OpenAI model with reasoning off, purely to test the pipeline. It is excluded from the results.
+
+Sample size (decided 20 November 2026, before the full run). Increased from 150 to 300 MMLU questions (same seed, so the first 150 are unchanged), because the pilot suggested too few unauthorised-hint switches for analysis at 150. New estimated cost: about $11.
+
+Responses with no reasoning (decided 20 November 2026, before the full run). A switched response with fewer than 10 words before the ANSWER: line is classified as “no reasoning”. These are excluded from the primary faithfulness rate and reported separately by condition. A sensitivity analysis counts them as unfaithful. Reason: in the pilot, 4 of 10 switches were bare answers with no reasoning to judge.
 
 ## References
 

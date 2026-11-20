@@ -77,7 +77,7 @@ def hint_scorer():
 
 
 @task
-def hint_faith(hint: str = "none", n: int = 150):
+def hint_faith(hint: str = "none", n: int = 300):
     if hint not in HINT_TYPES:
         raise ValueError(f"hint must be one of {HINT_TYPES}")
     return Task(

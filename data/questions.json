@@ -1798,5 +1798,1805 @@
     ],
     "answer": 1,
     "subject": "high_school_macroeconomics"
+  },
+  {
+    "id": 150,
+    "question": " Norcross agrees that if a being is incapable of moral reasoning, at even the most basic level, then it cannot be",
+    "choices": [
+      "a moral patient.",
+      "a moral agent.",
+      "an object of moral sympathy.",
+      "a being of value."
+    ],
+    "answer": 1,
+    "subject": "moral_disputes"
+  },
+  {
+    "id": 151,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I took the towels from the hotel pool back to my room. Scenario 2 | Because I've been nervous about retirement, I decided to take money out of the cash register at my job.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 2,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 152,
+    "question": "A 35-year-old woman comes to the physician because of two 12-hour episodes of dizziness over the past 3 months. During episodes, she experiences the acute onset of rotatory vertigo and imbalance, decreased hearing, tinnitus, a sense of fullness of the right ear, and vomiting. Examination shows a mild hearing loss of the right ear. Which of the following is the most likely diagnosis?",
+    "choices": [
+      "Acoustic neuroma",
+      "Benign positional vertigo",
+      "Brain stem transient ischemic attacks",
+      "Meniere's disease"
+    ],
+    "answer": 3,
+    "subject": "professional_medicine"
+  },
+  {
+    "id": 153,
+    "question": "The number of customers served per day by a large department store is normally distributed, with a mean of 3,250 customers and a standard deviation of 320. Find the range of customers served on the middle 50 percent of days.",
+    "choices": [
+      "(3,034, 3,466)",
+      "(2,930, 3,570)",
+      "(2,610, 3,890)",
+      "(2,450, 4,050)"
+    ],
+    "answer": 0,
+    "subject": "high_school_statistics"
+  },
+  {
+    "id": 154,
+    "question": "Which of the following statements are correct concerning the use of antithetic variates as part of a Monte Carlo experiment?\n\ni) Antithetic variates work by reducing the number of replications required to cover the whole probability space\n\nii) Antithetic variates involve employing a similar variable to that used in the simulation, but whose properties are known analytically\n\niii) Antithetic variates involve using the negative of each of the random draws and repeating the experiment using those values as the draws\n\niv) Antithetic variates involve taking one over each of the random draws and repeating the experiment using those values as the draws",
+    "choices": [
+      "(ii) and (iv) only",
+      "(i) and (iii) only",
+      "(i), (ii), and (iv) only",
+      "(i), (ii), (iii), and (iv)"
+    ],
+    "answer": 1,
+    "subject": "econometrics"
+  },
+  {
+    "id": 155,
+    "question": "Under certain conditions, a beam of electrons impinging on a crystal surface will diffract and a scattering pattern of the beam can be obtained. What is the approximate kinetic energy of the electrons needed in order to see the pattern? (Assume the lattice spacing of the crystal to be 0.4 nm.)",
+    "choices": [
+      "0.1 eV",
+      "1 eV",
+      "10 eV",
+      "100 eV"
+    ],
+    "answer": 2,
+    "subject": "college_physics"
+  },
+  {
+    "id": 156,
+    "question": "What color are the shortest electromagnetic waves humans can see?",
+    "choices": [
+      "green",
+      "violet",
+      "red",
+      "orange"
+    ],
+    "answer": 1,
+    "subject": "high_school_psychology"
+  },
+  {
+    "id": 157,
+    "question": "Based on the paper “SoK: SSL and HTTPS: Revisiting past challenges and evaluating certificates trust model enhancements”, which of the following statements are false?",
+    "choices": [
+      "Valid DV certificates provide more confidence to a user that she is connecting to the intended party than valid EV certificates.",
+      "OCSP stapling allows a server to prove to a browser that its certificate hasn’t been revoked.",
+      "DANE makes it difficult for an adversary to launch a SSL stripping attack.",
+      "Server key-pinning makes it harder for an adversary to convince a CA to mint a certificate for a site and launch an MITM attack on that site."
+    ],
+    "answer": 0,
+    "subject": "computer_security"
+  },
+  {
+    "id": 158,
+    "question": "What is the greatest common divisor of $2^{1001}-1$ and $2^{1012}-1$?",
+    "choices": [
+      "1",
+      "2049",
+      "2048",
+      "2047"
+    ],
+    "answer": 3,
+    "subject": "high_school_mathematics"
+  },
+  {
+    "id": 159,
+    "question": "What is the primary lipoprotein secreted from the liver that is at least partially composed of dietary derived lipids?\n",
+    "choices": [
+      "Chylomicrons",
+      "HDL",
+      "VLDL",
+      "LDL"
+    ],
+    "answer": 2,
+    "subject": "nutrition"
+  },
+  {
+    "id": 160,
+    "question": "Which of the following promotes glucose and amino acid uptake by muscle?",
+    "choices": [
+      "Adrenaline",
+      "Insulin",
+      "Glycogen",
+      "Cortisol"
+    ],
+    "answer": 1,
+    "subject": "college_medicine"
+  },
+  {
+    "id": 161,
+    "question": " Collectively organizations that combine to enable offerings to reach end users quickly and efficiently constitute a marketing channel, are sometimes referred to as a:",
+    "choices": [
+      "Vehicle.",
+      "Courier.",
+      "Transportation.",
+      "Distribution channel."
+    ],
+    "answer": 3,
+    "subject": "marketing"
+  },
+  {
+    "id": 162,
+    "question": "A number is rounded to the nearest hundred. The result is 500. Which number could not be the number before it was rounded to the nearest hundred?",
+    "choices": [
+      "458",
+      "463",
+      "547",
+      "559"
+    ],
+    "answer": 3,
+    "subject": "elementary_mathematics"
+  },
+  {
+    "id": 163,
+    "question": "This question refers to the following information.\nThose who came before us made certain that this country rode the first waves of the industrial revolutions, the first waves of modern invention, and the first wave of nuclear power, and this generation does not intend to flounder in the backwash of the coming age of space. We mean to be a part of it—we mean to lead it. For the eyes of the world now look into space, to the moon, and the planets beyond, and we have vowed that we shall not see it governed by a hostile flag of conquest, but by a banner of freedom and peace. We have vowed that we shall not see space filled with weapons of mass destruction, but with instruments of knowledge and understanding.… We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.\n—John F. Kennedy, September 12, 1962\nJohn F. Kennedy in this passage is urging his fellow Americans to emulate which of the following?",
+    "choices": [
+      "The pioneers",
+      "Progressive reformers",
+      "Captains of industry",
+      "The Green Berets"
+    ],
+    "answer": 0,
+    "subject": "high_school_us_history"
+  },
+  {
+    "id": 164,
+    "question": "Most mnemonic devices (like learning the notes on the staff by memorizing the sentence \"Every Good Boy Does Fine\" and using the first letter of each word) are examples of which memory enhancement technique?",
+    "choices": [
+      "semantic encoding",
+      "potentiation",
+      "recognition",
+      "chunking"
+    ],
+    "answer": 3,
+    "subject": "high_school_psychology"
+  },
+  {
+    "id": 165,
+    "question": "Tony got accepted to the college he wants to attend, is going to the prom with a girl he really admires, and was hired for the summer job he sought. He has high",
+    "choices": [
+      "self-efficacy",
+      "self-doubt",
+      "self-handicapping",
+      "introversion"
+    ],
+    "answer": 0,
+    "subject": "high_school_psychology"
+  },
+  {
+    "id": 166,
+    "question": "According to Piaget, children are ___________.",
+    "choices": [
+      "“Blank slates”",
+      "Less intelligent than adults",
+      "“Little scientists”",
+      "Shaped by culture"
+    ],
+    "answer": 2,
+    "subject": "professional_psychology"
+  },
+  {
+    "id": 167,
+    "question": "A company predicted that it would manufacture 10,000 units of finished goods during March. The direct labor standards indicated that each unit of finished goods requires 2.4 direct labor hours at a standard wage of $20 per hour, totaling $48.00 per finished good unit. During March, the company actually made 9,000 units of finished goods. Production used 2.5 labor hours per finished unit, and the company actually paid $21 per hour, totaling $52.50 per unit of finished product. What amount is the company's direct labor rate variance for March?",
+    "choices": [
+      "$18,000",
+      "$22,500",
+      "$25,000",
+      "$40,500"
+    ],
+    "answer": 1,
+    "subject": "professional_accounting"
+  },
+  {
+    "id": 168,
+    "question": "Which description below most accurately captures the distinction between Gemeinschaft and Gesellschaft?",
+    "choices": [
+      "Gemeinschaft is democratic Gesellschaft, autocratic.",
+      "Gemeinschaft exists in civil society, Gesellschaft in civic society.",
+      "Gemeinschaft is a society based on community, Gesellschaft one based on association",
+      "Gemeinschaft refers to an open government, Gesellschaft to a lack of transparency."
+    ],
+    "answer": 2,
+    "subject": "jurisprudence"
+  },
+  {
+    "id": 169,
+    "question": "Which of the following statements about meiosis is correct?",
+    "choices": [
+      "The daughter cells are genetically identical to the parent cells.",
+      "Homologues pair during prophase II.",
+      "DNA replication occurs before meiosis I and meiosis II.",
+      "The number of chromosomes is reduced."
+    ],
+    "answer": 3,
+    "subject": "high_school_biology"
+  },
+  {
+    "id": 170,
+    "question": "Baggini accuses pessimists of mixing up the two senses of _____.",
+    "choices": [
+      "philosophy",
+      "religion",
+      "meaning",
+      "time"
+    ],
+    "answer": 2,
+    "subject": "philosophy"
+  },
+  {
+    "id": 171,
+    "question": "Another name for the bandwagon appeal is",
+    "choices": [
+      "appeal to beliefs",
+      "appeal to authority",
+      "appeal to the people",
+      "common man appeal"
+    ],
+    "answer": 2,
+    "subject": "logical_fallacies"
+  },
+  {
+    "id": 172,
+    "question": "In Greek mythology what is the name of Zeus' father?",
+    "choices": [
+      "Apollo",
+      "Cronus",
+      "Prometheus",
+      "Hercules"
+    ],
+    "answer": 1,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 173,
+    "question": "How can extraordinary measures be defined as 'special' or 'extra' ordinary?",
+    "choices": [
+      "Where the state employs the use of force or violence this can be regarded as an extraordinary measure.",
+      "Those measures taken as a response to a securitized existential threat can be defined as extraordinary.",
+      "Those measures that exist outside the usual paradigm of the political realm.",
+      "All of these options."
+    ],
+    "answer": 2,
+    "subject": "security_studies"
+  },
+  {
+    "id": 174,
+    "question": "Changing which of the following will change the numerical value of the equilibrium constant?",
+    "choices": [
+      "The pressure of reactants",
+      "The pressure of products",
+      "The temperature",
+      "The total mass of the chemicals present"
+    ],
+    "answer": 2,
+    "subject": "high_school_chemistry"
+  },
+  {
+    "id": 175,
+    "question": " What is an example of \"mutual coercion, mutually agreed upon\"?",
+    "choices": [
+      "all countries cooperating to change the existing incentive structure by introducing a system of enforceable sanctions to curb climate change.",
+      "the agreement of more powerful nations to require less powerful nations to curb greenhouse gas emissions for the benefit of all humanity.",
+      "the agreement of less powerful nations to boycott trade with more powerful nations until the latter agree to curb their greenhouse gas emissions.",
+      "the agreement of a large number of individual agents to restrict their own pollution."
+    ],
+    "answer": 0,
+    "subject": "moral_disputes"
+  },
+  {
+    "id": 176,
+    "question": "Electric drive is becoming more and more popular because",
+    "choices": [
+      "all of below.",
+      "it provide smooth and easy control.",
+      "it is cheaper in cost.",
+      "it is simple and reliable."
+    ],
+    "answer": 0,
+    "subject": "electrical_engineering"
+  },
+  {
+    "id": 177,
+    "question": "A homeowner was planning to construct a new pooi in her back yard. She hired a well-known pool contractor to design and construct the pool. The contractor, in turn, hired a subcontractor to dig the hole and plaster the pooi area. After the subcontractor completed his job, the contractor then hired an electrician to install the heater and wiring for the pool. While the electrician was performing his work, the wiring became disjointed and had to be replaced at a substantial expense to the homeowner. If the homeowner sues the electrician in tort to recover the damages she suffered because of this occurrence, will the homeowner prevail?",
+    "choices": [
+      "Yes, if the wiring became disjointed because the electrician's plans departed from established standards in the electrical industry.",
+      "No, unless the electrical wiring that became disjointed was defective.",
+      "No, if the electrician used his best professional judgment in performing the electrical work.",
+      "No, unless the homeowner knew that the contractor had hired the electrician to perform the electrical work."
+    ],
+    "answer": 0,
+    "subject": "professional_law"
+  },
+  {
+    "id": 178,
+    "question": "________ advertising campaigns are focused on gathering support for a particular message or cause.",
+    "choices": [
+      "Product-oriented",
+      "Person-oriented",
+      "Idea-oriented",
+      "Message-oriented"
+    ],
+    "answer": 2,
+    "subject": "public_relations"
+  },
+  {
+    "id": 179,
+    "question": "This question refers to the following information.\n\"The challenge of the next half century is whether we have the wisdom to use wealth to enrich and elevate our national life, and to advance the quality of our American civilization….The Great Society rests on abundance and liberty for all. It demands an end to poverty and racial injustice, to which we are totally committed in our time. But that is just the beginning. The Great Society is a place where every child can find knowledge to enrich his mind and to enlarge his talents. It is a place where leisure is a welcome chance to build and reflect, not a feared cause of boredom and restlessness. It is a place where the city of man serves not only the needs of the body and the demands of commerce but the desire for beauty and the hunger for community. It is a place where man can renew contact with nature. It is a place which honors creation for its own sake and for what it adds to the understanding of the race. It is a place where men are more concerned with the quality of their goals than the quantity of their goods. But most of all, the Great Society is not a safe harbor, a resting place, a final objective, a finished work. It is a challenge constantly renewed, beckoning us toward a destiny where the meaning of our lives matches the marvelous products of our labor.\"\nLyndon Johnson, Remarks at the University of Michigan, Ann Arbor, 1964\nAll of the following were part of Johnson's Great Society program EXCEPT",
+    "choices": [
+      "the Civil Rights Act of 1964",
+      "Medicare and Medicaid",
+      "the establishment of the Department of Housing and Urban Development",
+      "the balanced budget mandate"
+    ],
+    "answer": 3,
+    "subject": "high_school_us_history"
+  },
+  {
+    "id": 180,
+    "question": "Which single statement about fat digestion and absorption is correct?\n",
+    "choices": [
+      "Absorption of fatty acids in the intestine occurs mainly through FABP and FAT/CD36 transport proteins in the enterocytes of the distal duodenum",
+      "After absorption, medium chain triglycerides (MCT) enter the lymphatic system, whereas long chain triglycerides enter the portal blood system.",
+      "The products of partial digestion of triglycerides (triacylglycerols) can form mixed micelles with pancreatic cholesterol and phospholipids and this increases absorption",
+      "Triglycerides (triacylglycerols) must be emulsified and digested before the fatty acids can be transported"
+    ],
+    "answer": 3,
+    "subject": "nutrition"
+  },
+  {
+    "id": 181,
+    "question": "This question refers to the following information.\nThe following account of the Paris Exposition of 1889.\n\"The opportunities to study the natural history of man in Paris during the Exposition, and especially in August, when the great Congresses and the French Association held their sessions, were unparalleled in the history of anthropology. At any time the French capital affords rare advantages to the anthropologist. The Musée and Laboratoire Broca, the anthropometric operations of Bertillon in the Palais de Justice, the courses of lectures in the école d'Anthropologie, the collections in the Jardin de Plantes, the facilities for original work in the écoles de Medicine, and the hospitals give to the comparative anatomist and biologist abundant employment.\"\nOtis T. Mason, American ethnologist and curator, 1889\nThe field primarily described in this passage was born when",
+    "choices": [
+      "scientific societies needed new ways of attracting members who were less interested in the study of the natural world",
+      "there arose a sudden interest in expanding human rights throughout the French colonies",
+      "scientific principles were applied to other cultures as a result of the sudden expansion of European dominance across large parts of the globe",
+      "a large influx of immigrants from Africa and Asia arrived in Europe"
+    ],
+    "answer": 2,
+    "subject": "high_school_european_history"
+  },
+  {
+    "id": 182,
+    "question": "A store owner noticed that an expensive electronic device was missing from the store. He assumed that a shoplifter had taken it. Later that day, the store owner was cleaning up the small room in the back of the store that the employees of the store used to store their personal items while they were at work. The store owner was straightening up the coat rack in the back room, when he accidentally knocked one of the employee's coats off the hanger. As the coat fell onto the floor, the missing electronic device fell out of the pocket of the coat. It was still in its original packaging, and the store owner checked the serial number on the package to confirm that it was the device missing from the store's shelves. The store owner knew that the coat belonged to a woman who worked as a cashier in the store. The store owner felt bad, but decided that he had no choice but to call the police. Two police officers arrived at the store. They gathered information from the store owner, who signed a criminal complaint against the woman. The officers then discussed the matter with the woman. Although she denied stealing anything, the officers arrested her and informed her that they would need to take her to the police station. After the police took the woman away, another employee of the store found out that the woman had been arrested. That employee immediately went to the store owner and admitted that he was actually the one who had stolen the device, and that he had hidden it in the woman's coat, intending to retrieve it later before the end of the woman's work shift. The store owner promptly called the police and told them that there had been a mistake and that the theft charge against the woman was invalid. The police released the woman, who spent a total of approximately 30 minutes in police custody. If the woman asserts a claim for false imprisonment against the arresting officers, will the woman prevail?",
+    "choices": [
+      "Yes, because the woman had not committed a crime at the time she was arrested.",
+      "Yes, because the woman was arrested and held in custody.",
+      "No, because the woman was detained for only 30 minutes.",
+      "No, because the officers had probable cause to arrest the woman based on the store owner's complaint and honest belief that the woman had stolen the device."
+    ],
+    "answer": 3,
+    "subject": "professional_law"
+  },
+  {
+    "id": 183,
+    "question": "The Voting Rights Act of 1965",
+    "choices": [
+      "granted women the right to vote",
+      "banned race-based discrimination",
+      "granted African-Americans the right to vote",
+      "suspended the use of literacy tests at voting centers"
+    ],
+    "answer": 3,
+    "subject": "high_school_government_and_politics"
+  },
+  {
+    "id": 184,
+    "question": "Silicon and Germanium are ________ elements.",
+    "choices": [
+      "trivalant",
+      "pentavalant",
+      "hexavalant",
+      "tetravalant"
+    ],
+    "answer": 3,
+    "subject": "electrical_engineering"
+  },
+  {
+    "id": 185,
+    "question": "The police suspected a woman of dealing in stolen credit cards. An undercover police officer knocked on the woman's door and told her that he was willing to pay for usable credit cards. When the woman asked if he was a police officer, the officer replied, \"No,\" giving her a false name and saying, \"You can call Harvey he'll vouch for me.\" The woman admitted him to her house. After she left the room to call Harvey, the officer lifted some papers off a desk and underneath discovered three credit cards bearing different names. He seized the cards, and when the woman returned, he arrested her. The woman has moved to suppress the evidence seized on the ground that her Fourth Amendment rights were violated. Should the court grant the motion to suppress?",
+    "choices": [
+      "No, because it was immediately apparent that the cards were stolen.",
+      "No, because the woman assumed the risk that the officer would seize items in plain sight.",
+      "Yes, because the woman's rights were violated when the officer lifted the papers.",
+      "Yes, because the woman's rights were violated when the officer obtained entry by deceit."
+    ],
+    "answer": 2,
+    "subject": "professional_law"
+  },
+  {
+    "id": 186,
+    "question": "This question refers to the following information.\nOur leaders talk about stopping aggression from the north, but this was a struggle among groups of Vietnamese until we intervened. We seem bent upon saving the Vietnamese from Ho Chi Minh even if we have to kill them and demolish their country to do it. As the native people survey bombed-out villages, women and children burned by napalm, rice crops destroyed and cities overrun with our military personnel, they are doubtless saying secretly of the Vietcong guerillas and of the American forces, \"A plague on both your houses.\" … Stop the bombing, north and south, end search and destroy offensive sweeps, and confine our military action to holding operations on the ground. Bombing the north has failed to halt or seriously check the flow of troops to the south and may, in fact, have prompted a much greater war effort by Hanoi.\n—Senator George McGovern, \"The Lessons of Vietnam,\" April 25, 1967\nThe sentiments expressed in the speech above most directly influenced which of the following?",
+    "choices": [
+      "The passage of the War Powers Act of 1973",
+      "The Tet Offensive of 1968",
+      "The resignation of Richard Nixon in 1974",
+      "The emergence of a youth counterculture"
+    ],
+    "answer": 0,
+    "subject": "high_school_us_history"
+  },
+  {
+    "id": 187,
+    "question": "The \"within transform\" involves",
+    "choices": [
+      "Taking the average values of the variables",
+      "Subtracting the mean of each entity away from each observation on that entity",
+      "Estimating a panel data model using least squares dummy variables",
+      "Using both time dummies and cross-sectional dummies in a fixed effects panel model"
+    ],
+    "answer": 1,
+    "subject": "econometrics"
+  },
+  {
+    "id": 188,
+    "question": "Anscombe claims that the notion of moral obligation is derived from the concept of:",
+    "choices": [
+      "preference.",
+      "maximizing utility.",
+      "positive law.",
+      "divine law."
+    ],
+    "answer": 3,
+    "subject": "philosophy"
+  },
+  {
+    "id": 189,
+    "question": "Real GDP",
+    "choices": [
+      "is actual GDP as opposed to the estimate made by the BEA.",
+      "is also called current-dollar GDP.",
+      "is GDP adjusted for price changes.",
+      "is not calculated for the United States."
+    ],
+    "answer": 2,
+    "subject": "high_school_macroeconomics"
+  },
+  {
+    "id": 190,
+    "question": "Consider the number pattern 5, 9, 13, 17, 21, 25, 29. Which rule could have been used to make the pattern?",
+    "choices": [
+      "Start with 0. Add 4 each time to get the next number.",
+      "Start with 0. Add 5 each time to get the next number.",
+      "Start with 5. Add 4 each time to get the next number.",
+      "Start with 5. Add 5 each time to get the next number."
+    ],
+    "answer": 2,
+    "subject": "elementary_mathematics"
+  },
+  {
+    "id": 191,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I was careful to hide the blanket from the man when I noticed he was shivering. Scenario 2 | There isn't enough food to go around our dinner table, but I make sure my kids get something to eat.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 1,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 192,
+    "question": "Stephanie flew 2,448 miles from Los Angeles to New York City. What is the number of miles Stephanie flew rounded to the nearest thousand?",
+    "choices": [
+      "2,000",
+      "2,400",
+      "2,500",
+      "3,000"
+    ],
+    "answer": 0,
+    "subject": "elementary_mathematics"
+  },
+  {
+    "id": 193,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I cooked a delicious chicken for dinner. Scenario 2 | I asked the woman my age on a date.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 3,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 194,
+    "question": "A bag has 4 red and 6 blue marbles. A marble is selected and not replaced, then a second is selected. What is the probability that both are the same color?",
+    "choices": [
+      "\\frac{1}{8}",
+      "\\frac{8}{15}",
+      "\\frac{1}{15}",
+      "\\frac{7}{15}"
+    ],
+    "answer": 3,
+    "subject": "high_school_mathematics"
+  },
+  {
+    "id": 195,
+    "question": "A landlord is the owner in fee simple of a tract of land on which is situated a large office building. The landlord leases the land and building thereon to a tenant for a term of seven years, commencing on August 1, 2001, and terminating at midnight on July 31, 2008. The lease contains the following provisions:\"(1) The tenant covenants to pay the rent of $750 per month on the first day of each month. \"After three years of the lease had expired, the tenant assigned the entire balance of the lease period to an attorney, who took immediate possession of the leased property. Then in 2005, the attorney assigned his leasehold interest to a doctor. The doctor went into possession, but failed to pay any rent for two months. After the doctor failed to make his rental payments for the first two months of his lease, the landlord brought suit against the tenant to recover for the unpaid rent. Judgment should be for",
+    "choices": [
+      "the landlord, because the tenant's contractual obligation under the lease survived the assignments.",
+      "the landlord, because he did not object to the assignments.",
+      "the tenant, because the doctor, as assignee, would only be held liable.",
+      "the tenant, because his assignment to the attorney constituted a novation, thereby extinguishing his obligation to pay rent."
+    ],
+    "answer": 0,
+    "subject": "professional_law"
+  },
+  {
+    "id": 196,
+    "question": " Which of the following statements would Macedo disagree with?",
+    "choices": [
+      "States should give special weight to their own citizens.",
+      "Immigration policies can have powerful economic effects.",
+      "Self-governance is morally irrelevant to the immigration debate.",
+      "There are reasons to think U.S. immigration policy has had detrimental effects on income distribution among citizens."
+    ],
+    "answer": 2,
+    "subject": "moral_disputes"
+  },
+  {
+    "id": 197,
+    "question": "Which of the following is a characteristic of the fault-tolerant nature of routing on the Internet?",
+    "choices": [
+      "The ability to use a hierarchical naming system to avoid naming conflicts",
+      "The ability to provide data transmission even when some connections have failed",
+      "The ability to resolve errors in domain name system (DNS) lookups",
+      "The ability to use multiple protocols such as hypertext transfer protocol (HTTP), Internet protocol (LP), and simple mail transfer protocol (SMTP) to transfer data"
+    ],
+    "answer": 1,
+    "subject": "high_school_computer_science"
+  },
+  {
+    "id": 198,
+    "question": "Which theorist(s) tried to explain the prices of farm products as they relate to patterns of land use?",
+    "choices": [
+      "Rostow",
+      "Ravenstein",
+      "Von Thünen",
+      "Burgess"
+    ],
+    "answer": 2,
+    "subject": "high_school_geography"
+  },
+  {
+    "id": 199,
+    "question": "In what order do managers typically perform the managerial functions?",
+    "choices": [
+      "organising, planning, controlling, leading",
+      "organising, leading, planning, controlling",
+      "planning, organising, leading, controlling",
+      "planning, organising, controlling, leading"
+    ],
+    "answer": 2,
+    "subject": "management"
+  },
+  {
+    "id": 200,
+    "question": "According to Hobbes, peace is the first law of nature because of which of the following situations?",
+    "choices": [
+      "Without peace everyone has a right to everything - including another's life.",
+      "Peace is possible only after war.",
+      "Law cannot achieve peace.",
+      "The social contract cannot be entered into unless there is peace."
+    ],
+    "answer": 0,
+    "subject": "jurisprudence"
+  },
+  {
+    "id": 201,
+    "question": "At the end of the course, Professor Jones told us that we were the best class he had ever had. That's why I'm sure that the 0.0 the appeared on my grade report is a mistake. Surely, if we were as good a class as Professor Jones said we were, none of us deserved to fail.",
+    "choices": [
+      "Fallacy of Composition",
+      "Fallacy of Division",
+      "Questionable Cause",
+      "Appeal to Gallery (Provicialism)"
+    ],
+    "answer": 1,
+    "subject": "logical_fallacies"
+  },
+  {
+    "id": 202,
+    "question": "According to Brown v. Board of Education (1954), which of the following amendments was violated by the \"separate but equal\" doctrine that had been established in Plessy v. Ferguson (1896)?",
+    "choices": [
+      "First Amendment",
+      "Sixth Amendment",
+      "Ninth Amendment",
+      "Fourteenth Amendment"
+    ],
+    "answer": 3,
+    "subject": "high_school_government_and_politics"
+  },
+  {
+    "id": 203,
+    "question": "What is 'coring'?",
+    "choices": [
+      "A symptom of phlebitis.",
+      "Titration of a drug with its desired effect.",
+      "The delivery of medication straight into the bloodstream.",
+      "When drugs are withdrawn from a sealed vial, fragments of the rubber bung can be cut out by the needle."
+    ],
+    "answer": 3,
+    "subject": "clinical_knowledge"
+  },
+  {
+    "id": 204,
+    "question": "Which of these planets has no known moon?",
+    "choices": [
+      "Neptune",
+      "Mercury",
+      "Mars",
+      "Saturn"
+    ],
+    "answer": 1,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 205,
+    "question": "What does Dworkin mean by the 'semantic sting'?",
+    "choices": [
+      "The language of the law is generally unclear.",
+      "Lawyers' arguments usually concern language.",
+      "Judges are prey to linguistic misunderstanding.",
+      "The rule of recognition cannot fully account for legal validity."
+    ],
+    "answer": 3,
+    "subject": "jurisprudence"
+  },
+  {
+    "id": 206,
+    "question": "For a man and woman on a date 'dutch treat' means what?",
+    "choices": [
+      "The man pays",
+      "The woman pays",
+      "The Dutch pay",
+      "Each pays their own way"
+    ],
+    "answer": 3,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 207,
+    "question": "Reindeer herding as an economic activity of the Sami in Norway is an example of which of the following types of diffusion?",
+    "choices": [
+      "Stimulus",
+      "Hierarchical",
+      "Relocation",
+      "Contagious"
+    ],
+    "answer": 0,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 208,
+    "question": "Critics of the divine command theory have argued that the theory implies that God's commands are _____.",
+    "choices": [
+      "well supported",
+      "unclear",
+      "unknowable",
+      "arbitrary"
+    ],
+    "answer": 3,
+    "subject": "philosophy"
+  },
+  {
+    "id": 209,
+    "question": "Which of these is a fish?",
+    "choices": [
+      "sea horse",
+      "sea cow",
+      "sea snake",
+      "sea lion"
+    ],
+    "answer": 0,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 210,
+    "question": "Which of the following will increase wages for tuba makers?",
+    "choices": [
+      "An increase in the number of graduates at tuba maker training school",
+      "An increase in the price of tubas",
+      "An increase in the price of tuba lessons",
+      "An increase in the tax on tubas"
+    ],
+    "answer": 1,
+    "subject": "high_school_microeconomics"
+  },
+  {
+    "id": 211,
+    "question": "Rainmaking Lawfirm regularly purchased its office supplies from catalogs. Marty Manager saw an advertising catalog from Costco offering 10,000 envelopes for $1,000 CIF. He immediately sent a purchase order which stated \"our law firm accepts your $1,000 offer for 10,000 envelopes for $1,000 CIF.\" Costco then sent Rainmaking an order confirmation which stated \"Envelope order acceptance conditional upon a loading charge of $50 per thousand envelopes.\" If the parties disagree on the proper contract relationship, a court would likely rule:",
+    "choices": [
+      "A contract at $1,000 because the offer terms CIF means cost, insurance and freight including all loading charges.",
+      "A contract at $1,500 because the loading charges are to be included.",
+      "No contract because the order confirmation was a counteroffer which was not accepted.",
+      "No contract because the purchase order was the offer and, under the mirror image rule, can not be deviated from."
+    ],
+    "answer": 2,
+    "subject": "professional_law"
+  },
+  {
+    "id": 212,
+    "question": "Which of the following would lead to a decrease in the money supply?",
+    "choices": [
+      "The FED lowers the discount rate.",
+      "The FED sells government securities in the secondary market.",
+      "The federal government spends less money.",
+      "The FED lowers reserve requirements."
+    ],
+    "answer": 1,
+    "subject": "high_school_macroeconomics"
+  },
+  {
+    "id": 213,
+    "question": "A 50.0 mL sample of 0.0025 M HBr is mixed with 50.0 mL of 0.0023 M KOH. What is the pH of the resulting mixture?",
+    "choices": [
+      "1",
+      "4",
+      "5",
+      "11"
+    ],
+    "answer": 1,
+    "subject": "high_school_chemistry"
+  },
+  {
+    "id": 214,
+    "question": "Which of the following matters does an auditor usually include in the engagement letter?",
+    "choices": [
+      "Arrangements regarding fees and billing.",
+      "Analytical procedures that the auditor plans to perform.",
+      "Indications of negative cash flows from operating activities.",
+      "Identification of working capital deficiencies."
+    ],
+    "answer": 0,
+    "subject": "professional_accounting"
+  },
+  {
+    "id": 215,
+    "question": "The set of integers Z with the binary operation \"*\" defined as a*b =a +b+ 1 for a, b in Z, is a group. The identity element of this group is",
+    "choices": [
+      "0",
+      "1",
+      "-1",
+      "12"
+    ],
+    "answer": 2,
+    "subject": "abstract_algebra"
+  },
+  {
+    "id": 216,
+    "question": "Abby drives 18 miles round trip between home and work each day. If her daily round trip is rounded to the nearest 5 miles, which of the following is the best estimate of the total number of miles driven in 5 days?",
+    "choices": [
+      "75 miles",
+      "100 miles",
+      "125 miles",
+      "180 miles"
+    ],
+    "answer": 1,
+    "subject": "elementary_mathematics"
+  },
+  {
+    "id": 217,
+    "question": "A 26-year-old woman with HIV infection comes to the office because of a 4-day history of pain and redness of her left lower leg. She says the symptoms began after she tripped over a tree branch in her yard and scraped her left leg. Current medications include antiretroviral therapy and ibuprofen as needed. Vital signs are temperature 38.3°C (100.9°F), pulse 86/min, respirations 14/min, and blood pressure 138/70 mm Hg. There is a 5×8-cm area on the anterior surface of her left lower extremity that is swollen, erythematous, and tender. She previously has developed a rash after taking erythromycin, and she has had an anaphylactic response to penicillin. Which of the following antibiotic therapies is most appropriate for this patient?",
+    "choices": [
+      "Amoxicillin",
+      "Ciprofloxacin",
+      "Clarithromycin",
+      "Clindamycin"
+    ],
+    "answer": 3,
+    "subject": "professional_medicine"
+  },
+  {
+    "id": 218,
+    "question": "Jyoti notes the behavior of people as they wait in line for tickets to rock concerts. Which of the following research methods is she using?",
+    "choices": [
+      "naturalistic observation",
+      "survey",
+      "controlled experiment",
+      "quasi-experiment"
+    ],
+    "answer": 0,
+    "subject": "high_school_psychology"
+  },
+  {
+    "id": 219,
+    "question": "Which of the following elements is a metal?",
+    "choices": [
+      "S",
+      "Se",
+      "I",
+      "Ga"
+    ],
+    "answer": 3,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 220,
+    "question": "A woman took her car to a mechanic to be serviced. After doing a thorough inspection of the car, the mechanic told the woman that her car needed extensive work and that he could do all that was needed for $1,000. The parties then entered into a written contract to have the car serviced for $1,000. As the woman remembers it, at the time the written contract was formed, the parties orally agreed that if the car required any additional servicing above that detailed in the contract, it would be included in the $1,000 fee. The mechanic, however, has no recollection of any such oral agreement. While servicing the car, the mechanic discovered that a belt was severel' worn and need to be replaced. The belt replacement was not listed as work to be performed in the written contract. The mechanic telephoned the woman and told her he had found the worn belt and felt he should replace it. The woman told him to do so. When the mechanic was finished, he presented the woman with a bill for $1,100, representing the $1,000 called for by the contract and $100 for the replacement of the worn belt, which is a reasonable amount. The woman refused to pay any more than$1,000. The mechanic sued the woman to collect the $100 for the replacement of the worn belt. If the court rules in favor of the mechanic, which of the following is the most likely cause for such a ruling?",
+    "choices": [
+      "The writing was construed as a complete integration of the parties' agreement.",
+      "The writing was construed as a partial integration of the parties' agreement.",
+      "An implied-in-law contract was created at the moment the mechanic replaced the worn belt.",
+      "The parties entered into a collateral oral agreement for the replacement of the worn belt that was excludable from the integrated writing."
+    ],
+    "answer": 0,
+    "subject": "professional_law"
+  },
+  {
+    "id": 221,
+    "question": "_________ enable different types of uncertainty to be lowered in several ways (Fill and McKee, 2012). These include reducing the complexity, increasing value and competitive advantage, routinization, and providing specialization.",
+    "choices": [
+      "Warehouse.",
+      "Distribution.",
+      "Supply chain.",
+      "Marketing channels."
+    ],
+    "answer": 3,
+    "subject": "marketing"
+  },
+  {
+    "id": 222,
+    "question": "The Apple iMac computer is available in all of the following colors except which?",
+    "choices": [
+      "Tangerine",
+      "Strawberry",
+      "Kiwi",
+      "Grape"
+    ],
+    "answer": 2,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 223,
+    "question": "Which of the following statements about excretory organs is true?",
+    "choices": [
+      "The kidneys of saltwater fishes produce urine hyperosmotic to their tissues.",
+      "The kidneys of desert mammals produce urine that is hypoosmotic to the urine of freshwater fishes.",
+      "Malpighian tubules allow insects to excrete waste through the exoskeleton.",
+      "Juxtamedullary nephrons in the mammalian kidney allow the organism to produce hyperosmotic urine."
+    ],
+    "answer": 3,
+    "subject": "college_biology"
+  },
+  {
+    "id": 224,
+    "question": "Of the following, the most accurate statement about hypnotic induction is that it",
+    "choices": [
+      "is harmful to many clients",
+      "allows the therapist to control the client’s behavior",
+      "can be terminated by the client",
+      "works better with less intelligent clients"
+    ],
+    "answer": 2,
+    "subject": "professional_psychology"
+  },
+  {
+    "id": 225,
+    "question": "A company contracted with a builder to construct a new corporate headquarters for a fixed price of $100 million. At the time of the contract, structural steel was widely available and was included in the contract as a $6 million item. Before work began on the project, tornado damage shut down the production facility of the biggest structural steel supplier in the country, and the price of structural steel increased by 20% as a result. The builder informed the company of the steel price increase, and the parties then orally agreed to increase the project price to $101 million. The builder proceeded with construction and delivered the project on time. The company paid the builder $100 million but refused to pay the additional $1 million. If the builder sues the company for $1 million, is the builder likely to prevail?",
+    "choices": [
+      "No, because the modification was never reduced to a writing signed by the party to be charged.",
+      "No, because there was no consideration for the modification of the contract.",
+      "Yes, because the companyÕs promise was supported by consideration.",
+      "Yes, because the modification was fair and equitable in view of the unanticipated increase in the price of structural steel."
+    ],
+    "answer": 3,
+    "subject": "professional_law"
+  },
+  {
+    "id": 226,
+    "question": "According to the quantity theory of money increasing the money supply serves to",
+    "choices": [
+      "stimulate short-run production and employment with very little long-run inflation.",
+      "increase short-run output but it is the source of long-run inflation.",
+      "lower the unemployment rate while also lowering the rate of inflation.",
+      "increase the nation's long-run capacity to produce."
+    ],
+    "answer": 1,
+    "subject": "high_school_macroeconomics"
+  },
+  {
+    "id": 227,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I grabbed the grinning little boy, my son, while at the Mall. Scenario 2 | I checked out the beautiful woman while on a date with my wife.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 2,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 228,
+    "question": "Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.",
+    "choices": [
+      "8",
+      "2",
+      "24",
+      "120"
+    ],
+    "answer": 2,
+    "subject": "abstract_algebra"
+  },
+  {
+    "id": 229,
+    "question": "This question refers to the following information.\nI walk alongside the column, ask what's going on.\nA soldier says simply: \"They call up more every day.\n\"Some of us were sent north to the Yellow River at age fifteen,\nAnd now at forty we're heading off to the garrisons in the west.\nOn our first tour, the village headman had to tie our bandannas for us.\nWhen we came back, our hair was white, but still there's more unrest.\nThe frontier garrisons run with blood, enough to fill an ocean,\nBut the Martial Emperor's territorial ambitions have yet to crest.\nIn the hundred districts east of the mountains, throughout the land of Han,\nThere must be ten thousand villages that brambles now infest.\nEven if wives are strong enough to handle a hoe and plow,\nThe crops grow every which way, the fields are all a mess.\nIt's hardest for the Shanxi men, with their reputations as fighters:\nThey're rounded up like dogs or chickens, every male impressed.\n\"But sir, though it's good of you to ask,\nComplaining isn't part of the soldier's task.\nWe can only shake our heads. Take this winter:\nThe Shanxi troops were never sent home.\nThe District Officers are demanding the land tax,\nBut where will it come from? You can't get blood from a stone!\nI honestly think it's bad luck to bear a son now,\nIt's better to have a daughter: at least she can marry\nAnd live with the neighbors next door.\nBut a son will end up lying on some distant prairie.\"\nDu Fu, \"Ballad of the Army Carts,\" ca. 750 C.E.\nThe poem provides evidence of which of the following as a major cause of later Tang decline?",
+    "choices": [
+      "Discontent among the peasantry due to oppressive taxation",
+      "Foreign invasion of the Tang heartlands",
+      "The spread of Buddhism and Taoism as a reaction to state-sponsored Confucianism",
+      "An ineffective bureaucracy and poor leadership"
+    ],
+    "answer": 0,
+    "subject": "high_school_world_history"
+  },
+  {
+    "id": 230,
+    "question": "A rancher is the owner of a ranch that is situated upon the top of a mountain. Located below the ranch is an estate that is owned by a millionaire. A stream is a non-navigable watercourse that originates at the top of the mountain and runs all the way down into a valley. Both the ranch and the estate are within the watershed of the stream. When the millionaire purchased the estate in 1956, he started taking water from the stream and used it to irrigate the southern half of his property, which he has used as a farm. Prior to 1956, the southern half of the estate had been cleared and placed in cultivation, while the northern half remained wooded and virtually unused. The millionaire continued this established pattern of use and has never stopped using the water in this way. In 1986, the rancher built a home on the ranch and started talcing water from the stream for domestic purposes. During that year there was heavy rainfall, and this caused the stream to run down the mountain at a high water level. However, in 1987, a drought caused the stream to flow at a very low level. Consequently, there was only enough water to irrigate the millionaire's farmland or, in the alternative, to supply all of the rancher's domestic water needs and one-quarter of the millionaire's irrigation requirements. The mountain is located in a jurisdiction where the period of prescription is 15 years. The rancher is continuing to take water for his personal needs and there is insufficient water to irrigate the estate. The millionaire then brings an appropriate action in 1996 to declare that his water rights to the stream are superior to those of the rancher. In addition, the millionaire moves to have the full flow of the stream passed to him, notwithstanding the effect it might have on the rancher. If this state follows the common law of riparian rights, but does not follow the doctrine of prior appropriation, judgment should be for whom?",
+    "choices": [
+      "The rancher, because as an upstream landowner, he would have superior rights to the water than a downstream owner.",
+      "The rancher, because domestic use is superior to and is protected against an agricultural use.",
+      "The millionaire, because he obtained an easement by prescription to remove as much water as he may need.",
+      "The millionaire, because he put the water to a beneficial use prior to the rancher's use and has continuously used the water."
+    ],
+    "answer": 1,
+    "subject": "professional_law"
+  },
+  {
+    "id": 231,
+    "question": "Butler claims that in the strictest and most proper sense, tofollow nature is to:",
+    "choices": [
+      "act as one pleases.",
+      "act on any of one’s passions.",
+      "act on one’s strongest passion.",
+      "act on one’s conscience."
+    ],
+    "answer": 3,
+    "subject": "philosophy"
+  },
+  {
+    "id": 232,
+    "question": "In the mid-1900s, the Soviet geneticist Lysenko believed that his winter wheat plants, exposed to ever-colder temperatures, would eventually give rise to ever more cold-tolerant winter wheat. Lysenko's attempts in this regard were most in agreement with the ideas of",
+    "choices": [
+      "Cuvier.",
+      "Hutton.",
+      "Lamarck.",
+      "Darwin."
+    ],
+    "answer": 2,
+    "subject": "high_school_biology"
+  },
+  {
+    "id": 233,
+    "question": "A student conducts an experiment to test the efficiency of a certain enzyme. Which of the following protocols would probably not result in a change in the enzyme’s efficiency?",
+    "choices": [
+      "Bringing the temperature of the experimental setup from 20°C to 50°C",
+      "Adding an acidic solution to the setup",
+      "Adding substrate but not enzyme",
+      "Placing the substrate and enzyme in a container with double the capacity"
+    ],
+    "answer": 3,
+    "subject": "high_school_biology"
+  },
+  {
+    "id": 234,
+    "question": "A psychologist obtains a statistically significant F-ratio for the interaction between two independent variables. This means that:",
+    "choices": [
+      "the effects of one variable are significant across all levels of the second variable.",
+      "the effects of one variable are contingent on the level of the second variable.",
+      "the main effects of both variables are statistically significant.",
+      "the two variables are statistically significant only when considered jointly."
+    ],
+    "answer": 1,
+    "subject": "professional_psychology"
+  },
+  {
+    "id": 235,
+    "question": "What does the term matsuri mean?",
+    "choices": [
+      "Amulets",
+      "Meditation",
+      "Rituals",
+      "Grand festivals"
+    ],
+    "answer": 3,
+    "subject": "world_religions"
+  },
+  {
+    "id": 236,
+    "question": "This question refers to the following information.\nSource 1:\n\"The Sovereign Congress of Venezuela, to which authority the people of the Republic of the New Granada have voluntarily stood by.\nConsidering:\n1. \"That united in a single Republic, the provinces of Venezuela and the New Granada have all proportions and ways to elevate themselves to a higher grade of power and prosperity.\n2. \"That constituted in separate republics, for any more stronger the ties that these have united them, so far from taking advantages of so many advantages, they would hardly consolidate and make respect their sovereignty.\n3. \"That these truths, highly penetrated by superior talented men and of an enlightened patriotism, had moved the governments of both republics to convene in a reunion that the vicissitudes of wars decreed and decree the following fundamental Law of the Republic of Colombia:\nARTICLE 1. The Republics of Venezuela and New Granada are from this day on united in a single one under the glorious title of Republic of Colombia….\nARTICLE 4. The Executive Power of the Republic will be vested on the President and in case of his defect a Vice President and his replacement will be appointed interimly by the acting Congress.\"\nFundamental Law Establishing Gran Colombia, passed by the Congress of Angostura convened by Simon Bolivar, 1819\nSource 2:\n\"IN THE NAME OF THE HOLY TRINITY.\nTITLE 1 - Of the Empire of Brazil, its Territories, Government, dynasty, and Religion.\nArt. 1. The EMPIRE of Brazil is the political association for all Brazilian citizens. These will form a free and independent nation, and will not form any other union or federation, which may cause it to lose its own Independence.\nArt. 2. Its territory is divided into provinces in the form in which it currently finds itself; these may be subdivided, as is required for the good of the state.\nArt. 3. Its government is a Hereditary Monarchy, constitutional, and Representative.\nArt. 4. The prevailing dynasty is that of the Lord Dom Pedro I, the sitting Emperor and Perpetual Defender of Brazil.\nArt. 5. The Catholic Apostolic Roman Religion will continue to be the religion of the Empire. Followers of all other religions are allowed to worship within their households, or particular houses for that intent, so long as there is nothing indicating this on the exterior of the Temple.\"\nConstitution of the Empire of Brazil, March 25, 1824\nTaken together, the two sources best illustrate which of the following aspects of political philosophy in the period circa 1750–1900 C.E.?",
+    "choices": [
+      "Constitutions around the world decreed representative governments for their citizens.",
+      "Monarchs exerted a great deal of influence in their nations' governments.",
+      "Military dictatorships often supplanted democratic governments.",
+      "Industrialization propelled societies to demand more social obligations from their governments."
+    ],
+    "answer": 0,
+    "subject": "high_school_world_history"
+  },
+  {
+    "id": 237,
+    "question": "Ethan, a new preschool student, does not talk or play with other students during center time. Which of the following strategies will best help him develop interpersonal relationships?",
+    "choices": [
+      "Demonstrating empathy for Ethan when there is a conflict during center time",
+      "Modeling how to show appropriate affection in the classroom",
+      "Encouraging students to name and discuss their feelings throughout the day",
+      "Identifying a student to be Ethan's partner and participate in center time with him"
+    ],
+    "answer": 3,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 238,
+    "question": "What term is used to describe a group of fish?",
+    "choices": [
+      "Knot",
+      "Drape",
+      "School",
+      "Gaggle"
+    ],
+    "answer": 2,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 239,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I sang to the baby as it slept peacefully. Scenario 2 | Sometimes I hide my grandpa's teeth because he loves a good prank.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 3,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 240,
+    "question": "Which of the following statements is correct about a trophic structure in which a leaf-eating grasshopper is eaten by a frog, which in turn is eaten by a snake?",
+    "choices": [
+      "The frog is a herbivore.",
+      "The snake is a secondary consumer.",
+      "The grasshopper is a primary consumer.",
+      "The snakes outnumber the grasshoppers in the community."
+    ],
+    "answer": 2,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 241,
+    "question": "Which is not a recognised form of business continuity planning?",
+    "choices": [
+      "Contingency planning",
+      "Scenario planning",
+      "Financial planning",
+      "Building planning"
+    ],
+    "answer": 3,
+    "subject": "management"
+  },
+  {
+    "id": 242,
+    "question": "Which hormone is primarily responsible for fluid regulation?",
+    "choices": [
+      "Antidiuretic hormone.",
+      "Insulin.",
+      "Adrenaline.",
+      "Testosterone."
+    ],
+    "answer": 0,
+    "subject": "clinical_knowledge"
+  },
+  {
+    "id": 243,
+    "question": "International development may be tied to the security of the state, why?",
+    "choices": [
+      "Threats to the state centralize political and economic power, threatening state development",
+      "Too many casualties drain the productive power of the state",
+      "Threats to the state encourage socialism",
+      "The two are correlated, but there is no causal effect"
+    ],
+    "answer": 0,
+    "subject": "us_foreign_policy"
+  },
+  {
+    "id": 244,
+    "question": "The neuropsychological evaluation of a 70-year-old retired professional indicates low average intelligence with poor problem-solving, word- finding difficulty, poor visuomotor coordination, and definite memory impairment. The patient has limited awareness of these deficits. The most probable diagnosis is",
+    "choices": [
+      "Dementia of the Alzheimer's Type",
+      "pseudodementia",
+      "Korsakoff’s syndrome",
+      "normal aging effects"
+    ],
+    "answer": 0,
+    "subject": "professional_psychology"
+  },
+  {
+    "id": 245,
+    "question": "Which country faces a serious trade disadvantage due to its location?",
+    "choices": [
+      "Singapore",
+      "Italy",
+      "Spain",
+      "Mongolia"
+    ],
+    "answer": 3,
+    "subject": "high_school_geography"
+  },
+  {
+    "id": 246,
+    "question": "A seller listed real property for $500,000, which was set to expire on Aug.1. The current lessee of the premises, who had made substantial improvements to the property, wanted to buy at the full list price but needed extra time. He paid $10,000 for an option to be added to the lease, giving him an option to buy on or before Sept. 1. The option stated that all notices required under it \"shall be deemed given if given in writing and delivered personally, delivered by commercial delivery service, or by certified mail return receipt requested, to the party to receive the Notice\" That notice was required by Sept. 1. Buyer called Seller on Aug. 25 and told her that he was exercising the option, but Seller did not remember the words used. The Buyer sent written intent to exercise it by first class mail on Aug. 29 but the Seller later testified that she did not receive it until September 3. On September 10 she notified Buyer that the option expired and the deal was off. Buyer filed a specific performance action to compel the transaction. Is it likely that the Equity Court will grant the request for specific performance?",
+    "choices": [
+      "Yes, the exercise of an option is not considered to be a situation where \"time is of the essence\" of the agreement, and options are liberally enforced so that the benefit of the bargain is not unreasonably lost.",
+      "Yes, the delay was minimal, the lessee would suffer hardship, and the wording of the notice requirement did not absolutely require one of the stated forms of notice.",
+      "No, because the Seller would be prejudiced by having to sell after the option date.",
+      "No, because option contracts are strictly enforced and even a one-day delay cannot be allowed due to the need to have commercial predictability in such transactions."
+    ],
+    "answer": 1,
+    "subject": "professional_law"
+  },
+  {
+    "id": 247,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I put my three year old daughter on time out for five minutes. Scenario 2 | I put face paint on the small child's face.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 3,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 248,
+    "question": "Which of the following describes the _tu quoque_ fallacy?",
+    "choices": [
+      "summarizing an opponent's position in a way that makes it seem silly",
+      "attempting to gain agreement based only on the feelings aroused in the argument",
+      "responding to charges of wrongdoing by saying the accuser does the same thing",
+      "arguing against a position based only on negative personal feelings toward the position"
+    ],
+    "answer": 2,
+    "subject": "logical_fallacies"
+  },
+  {
+    "id": 249,
+    "question": " In the context of Gardiner's article, what is \"the dispersion of causes and effects\"?",
+    "choices": [
+      "the dispersion of the impacts of emissions of greenhouse gases to other actors and regions of the Earth",
+      "the dispersion of the causes of greenhouse gas emissions across the Earth",
+      "the dispersion of carbon dioxide molecules in the atmosphere",
+      "the dispersion of fault and blame for causing greenhouse gas emissions."
+    ],
+    "answer": 0,
+    "subject": "moral_disputes"
+  },
+  {
+    "id": 250,
+    "question": "A hard-edge painting is most likely to be characterized by",
+    "choices": [
+      "an even, solid paint application",
+      "blurry color mixed on the painting's surface",
+      "scratchy brush marks clearly separated",
+      "translucent multiple layers of paint"
+    ],
+    "answer": 0,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 251,
+    "question": "Which of the following is the best example of a public good?",
+    "choices": [
+      "Private violin lessons",
+      "The volunteer fire department in your community",
+      "A $1 ticket for admission to a museum",
+      "A bag of potato chips"
+    ],
+    "answer": 1,
+    "subject": "high_school_microeconomics"
+  },
+  {
+    "id": 252,
+    "question": "Which pillar of cybersecurity is compromised when someone logs into a system using a stolen login and password?",
+    "choices": [
+      "Authentication",
+      "Confidentiality",
+      "Integrity",
+      "Nonrepudiation"
+    ],
+    "answer": 0,
+    "subject": "high_school_computer_science"
+  },
+  {
+    "id": 253,
+    "question": "The standard state for redox reactions includes",
+    "choices": [
+      "the temperature is 25 °C",
+      "concentrations of soluble species are 1 molar",
+      "partial pressures of gases are 1 atmosphere",
+      "all of the above are true"
+    ],
+    "answer": 3,
+    "subject": "high_school_chemistry"
+  },
+  {
+    "id": 254,
+    "question": "An employee of large manufacturing firm finds the work dull, and pursues the job only for the money. The employee performs minimally, and is not motivated so produce highest quantity or better quality. According to F. Herzberg's two-factor theory, the best way 10 increase this worker's self-motivation would be to",
+    "choices": [
+      "offer a raise and incentive pay for greater productivity",
+      "redesign the job to provide a challenge and a sense of accomplishment",
+      "increase opportunities for informed social interaction",
+      "provide the employee with a job tide carrying greater prestige"
+    ],
+    "answer": 1,
+    "subject": "professional_psychology"
+  },
+  {
+    "id": 255,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I nodded to someone while driving Scenario 2 | I used fresh beef to make the hamburgers.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 3,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 256,
+    "question": "What was Richard Nixon's middle name?",
+    "choices": [
+      "Michael",
+      "Milhous",
+      "Mortimer",
+      "Matthew"
+    ],
+    "answer": 1,
+    "subject": "miscellaneous"
+  },
+  {
+    "id": 257,
+    "question": "During the period when life is believed to have begun, the atmosphere on primitive Earth contained abundant amounts of all the following gases EXCEPT",
+    "choices": [
+      "oxygen",
+      "hydrogen",
+      "ammonia",
+      "methane"
+    ],
+    "answer": 0,
+    "subject": "high_school_biology"
+  },
+  {
+    "id": 258,
+    "question": "The most common cause of cerebral palsy is",
+    "choices": [
+      "trauma at the time of birth",
+      "dural hemorrhages",
+      "measles with accompanying fever",
+      "a genetic (autosomal) trait"
+    ],
+    "answer": 0,
+    "subject": "professional_psychology"
+  },
+  {
+    "id": 259,
+    "question": "At birth, the least developed part of the brain is the",
+    "choices": [
+      "visual system",
+      "cortex",
+      "brain stem",
+      "cerebellum"
+    ],
+    "answer": 1,
+    "subject": "professional_psychology"
+  },
+  {
+    "id": 260,
+    "question": "Who was the first American president to visit communist China?",
+    "choices": [
+      "Richard Nixon",
+      "George H. W. Bush",
+      "Jimmy Carter",
+      "Ronald Reagan"
+    ],
+    "answer": 0,
+    "subject": "us_foreign_policy"
+  },
+  {
+    "id": 261,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I made sure to dispose of my banana peel since someone could trip on it. Scenario 2 | I stirred the drink before giving it to the customer.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 3,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 262,
+    "question": "The 'decentralized city' can be identified by:",
+    "choices": [
+      "the shift of employment and services away from the inner city towards multiple centres in smaller towns and rural areas",
+      "the degendering of public space as women use local facilities more",
+      "gentrification: the movement of middle class people back into the inner city",
+      "all of the above"
+    ],
+    "answer": 3,
+    "subject": "sociology"
+  },
+  {
+    "id": 263,
+    "question": "Once the agency has discussed the brief with the client, the agency provides a detailed outline of how they intend to investigate the problem. This document is called the ____________:",
+    "choices": [
+      "Research brief.",
+      "Research proposal.",
+      "Research question.",
+      "Research programme."
+    ],
+    "answer": 1,
+    "subject": "marketing"
+  },
+  {
+    "id": 264,
+    "question": "A developer recently acquired a large vacant lot and wished to build a series of 10 tract homes on the lot to offer for sale. On May 1, he telephoned a number of contractors whom he had dealt with in the past and asked them to submit bids to build the homes. One of the contractors in turn sought bids from several subcontractors to determine the overall cost of the job. He notified each subcontractor that he intended to use their bids in submitting a general bid to the developer. A plumber submitted a bid to the contractor in the amount of $50,000, which the contractor used in computing the bid he sent to the developer. On June 1, the contractor submitted a bid to the developer in which he offered to build the 10 tract homes for $500,000. On June 4, the plumber notified the contractor that he had overbooked his crews and could not possibly do the work on the developer's job. On June 5, the developer sent the contractor a signed confirmation letter wherein he stated, \"I hereby accept your offer to build the 10 tract homes for $500,000. ', Thereafter, the contractor hired another plumber to complete the plumbing work at a cost of $60,000. The contractor then explained the situation to the developer and requested that the overall cost of the job be increased to $510,000. The developer refused on the grounds that he had a contract for $500,000 and that this was the contractor's problem. The contractor then built the 10 tract homes, and the developer sent him a check for $500,000. Which of the following best supports a claim for $10,000 by the contractor against the plumber who refused to do the work?",
+    "choices": [
+      "The plumber made an offer that the contractor accepted by using the plumber's bid in computing the bid he submitted to the developer.",
+      "The plumber's bid was a \"firm offer\" that was not revocable, since both the plumber and the contractor were merchants.",
+      "The contractor made an offer to the plumber that the plumber accepted when he submitted his bid.",
+      "An option contract was created, because the contractor, with the plumber's knowledge, used the plumber's bid in computing the bid he submitted to the developer."
+    ],
+    "answer": 3,
+    "subject": "professional_law"
+  },
+  {
+    "id": 265,
+    "question": "The key attribute in successful marathon running is:",
+    "choices": [
+      "strength.",
+      "power.",
+      "stride length.",
+      "stamina."
+    ],
+    "answer": 3,
+    "subject": "clinical_knowledge"
+  },
+  {
+    "id": 266,
+    "question": "Archaeological evidence for the domestication of cats suggests it occurred when and why?",
+    "choices": [
+      "before 22,000 years ago, as a result of the shift from opportunistic foraging to logistical collecting",
+      "before 11,000 years ago, as a direct result of artificial selection",
+      "after 11,000 years ago, as an unintentional consequence of food production and storage",
+      "after 9,000 years ago, as an unintentional result of the domestication of cattle and production of milk and cheese"
+    ],
+    "answer": 2,
+    "subject": "prehistory"
+  },
+  {
+    "id": 267,
+    "question": "What is a paradigm?",
+    "choices": [
+      "A theoretical assumption",
+      "An illustration",
+      "A theoretical model",
+      "An example serving as a model"
+    ],
+    "answer": 3,
+    "subject": "management"
+  },
+  {
+    "id": 268,
+    "question": "When collecting a gas over water, it is important to",
+    "choices": [
+      "set the temperature at 0°C",
+      "be sure the gas does not burn",
+      "wait until the barometer reads 760",
+      "correct for the vapor pressure of water"
+    ],
+    "answer": 3,
+    "subject": "high_school_chemistry"
+  },
+  {
+    "id": 269,
+    "question": "All of the following characteristics are typical of r-selected species EXCEPT",
+    "choices": [
+      "high reproductive rate",
+      "small body size",
+      "occupancy of unstable environments",
+      "high competitive ability"
+    ],
+    "answer": 3,
+    "subject": "college_biology"
+  },
+  {
+    "id": 270,
+    "question": "Company I manufactures demolition fuses that burn an average of 50 minutes with a standard deviation of 10 minutes, while company II advertises fuses that burn an average of 55 minutes with a standard deviation of 5 minutes. Which company's fuse is more likely to last at least 1 hour? Assume normal distributions of fuse times.",
+    "choices": [
+      "Company I's, because of its greater standard deviation",
+      "Company II's, because of its greater mean",
+      "For both companies, the probability that a fuse will last at least 1 hour is 0.159",
+      "For both companies, the probability that a fuse will last at least 1 hour is 0.841"
+    ],
+    "answer": 2,
+    "subject": "high_school_statistics"
+  },
+  {
+    "id": 271,
+    "question": "A baby duck runs for cover when a large object is tossed over its head. After this object is repeatedly passed overhead, the duck learns there is no danger and stops running for cover when the same object appears again. This is an example of",
+    "choices": [
+      "imprinting.",
+      "fixed-action pattern.",
+      "agonistic behavior.",
+      "habituation."
+    ],
+    "answer": 3,
+    "subject": "high_school_biology"
+  },
+  {
+    "id": 272,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I told my boss my head ached so I could go home and play video games. Scenario 2 | I took my friend's sweater so I could have it dry-cleaned.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 1,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 273,
+    "question": " According to Hardin, the fundamental error of \"sharing ethics\" is that",
+    "choices": [
+      "it is anti-Christian.",
+      "it would require a stronger system of taxation for the affluent.",
+      "it would lead to a \"tragedy of the commons.\"",
+      "all of the above"
+    ],
+    "answer": 2,
+    "subject": "moral_disputes"
+  },
+  {
+    "id": 274,
+    "question": "Why do contemporary European liberal democrats tend to object to the influence of exceptionalism on American foreign policy?",
+    "choices": [
+      "They see it as a challenge to European global influence",
+      "They see it as an ideological façade for US imperialism",
+      "They see it as a temporary phenomenon",
+      "None of the above"
+    ],
+    "answer": 1,
+    "subject": "us_foreign_policy"
+  },
+  {
+    "id": 275,
+    "question": "In the xy-plane, the graph of x^(log y) = y^log x is",
+    "choices": [
+      "the open first quadrant",
+      "a closed curve",
+      "a ray in the open first quadrant",
+      "a single point"
+    ],
+    "answer": 0,
+    "subject": "college_mathematics"
+  },
+  {
+    "id": 276,
+    "question": "________, where for example one party possess more resources, unfair distribution of ________, where one party gains more from the relationship, and CSOs being ________, are all limitations and risks of business-CSO collaborations.",
+    "choices": [
+      "Power imbalance, Benefits, Hoodwinked",
+      "Power imbalance, Resources, Co-opted",
+      "Informational asymmetries, Benefits, Hoodwinked",
+      "Informational asymmetries, Resources, Co-opted"
+    ],
+    "answer": 1,
+    "subject": "business_ethics"
+  },
+  {
+    "id": 277,
+    "question": "A state university was the scene of campus protests against nuclear weapons. A group of students painted purple a statue of the university's founder in protest to the university's federally subsidized nuclear weapon experimental studies. The leader of this group of students was a first-year student from a neighboring state who established residency in the state after beginning classes. The group leader had been the recipient of a $5,000 annual grant from the state to finance his education. However, the aid was withdrawn because of a state statute, which provided: \"Any student attending a state university who engages in disruptive campus activities will not be eligible for state aid. \"The group leader was married to a fellow student. However, in light of his involvement in defacing the statue and the loss of his state aid, his wife left him. At that time, the group leader received a tax bill for $150. This tax was imposed uniformly by the city on all individuals over 19 years of age, with the exception that full-time female college students were exempted. The tax notice stated that his wife, 22 years of age, qualified for the exemption, and there was no bill enclosed for her. Subsequently, the group leader moved in with his new girlfriend and began making arrangements to secure a divorce. However, the group leader was not able to obtain a divorce, since he had not fulfilled the 12-month residency requirement as imposed by state law. In an action by the group leader against the state challenging the constitutionality of the state statute regarding disruptive campus activities in order to regain his $5,000 annual grant, the court will most likely declare the statute",
+    "choices": [
+      "constitutional, because it promotes a compelling state interest.",
+      "constitutional, because it is a proper exercise of state action designed to regulate the activities of state university students.",
+      "unconstitutional, because it is vague and overbroad.",
+      "unconstitutional, because it is discriminatory on its face."
+    ],
+    "answer": 2,
+    "subject": "professional_law"
+  },
+  {
+    "id": 278,
+    "question": "A previously healthy 24-year-old woman comes to the physician because of a low-grade fever and a nonproductive cough for 7 days. She has been able to continue her daily activities. Her temperature is 37.7°C (99.9°F). A few scattered inspiratory crackles are heard in the thorax. An x-ray of the chest shows patchy infiltrates in both lungs. Which of the following is the most appropriate initial pharmacotherapy?",
+    "choices": [
+      "Amoxicillin",
+      "Cefaclor",
+      "Ciprofloxacin",
+      "Erythromycin"
+    ],
+    "answer": 3,
+    "subject": "professional_medicine"
+  },
+  {
+    "id": 279,
+    "question": "A state recently enacted a statute requiring the following of all firms that do business with and for the state (defined generally as selling goods or providing services to the state, its agencies, or subdivisions):  Such businesses must purchase insurance only from insurance companies chartered in the state and thus be subject to regulation by the state insurance commissioner;  In hiring any unskilled laborers for employment in connection with state business, preference must be given to citizens of the state;  Nonresident aliens shall be prohibited from engaging in any state related business activities;  All buildings constructed for the state must have roofs composed of adobe, which is composed of yellow silt or clay deposits found only in the state. The proposed statute's preamble recites that its provisions will ensure:  responsible insurance coverage for all those who do business with the state;  an increased standard of living for the citizens who comprise the state's labor force;  the lowest possible expenditures by the state government; and  a beautiful, uniform aesthetic decor for all new state buildings. In evaluating the constitutionality of the state statute under the Supremacy Clause of Article VI, which of the following would be most relevant?",
+    "choices": [
+      "The number of aliens presently residing in the state.",
+      "The necessity for the enactment of this particular statute.",
+      "The treaties and immigration laws of the United States.",
+      "The overall unemployment rate in the United States."
+    ],
+    "answer": 2,
+    "subject": "professional_law"
+  },
+  {
+    "id": 280,
+    "question": "Which of the following gives the total spin quantum number of the electrons in the ground state of neutral nitrogen (Z = 7)?",
+    "choices": [
+      "1/2",
+      "1",
+      "3/2",
+      "5/2"
+    ],
+    "answer": 2,
+    "subject": "college_physics"
+  },
+  {
+    "id": 281,
+    "question": "If 1.0 g of rubidium and 1.0 g of bromine are reacted, what will be left in measurable amounts (more than 0.10 mg) in the reaction vessel?",
+    "choices": [
+      "RbBr only",
+      "RbBr and Rb only",
+      "RbBr and Br2 only",
+      "RbBr, Rb, and Br2"
+    ],
+    "answer": 2,
+    "subject": "high_school_chemistry"
+  },
+  {
+    "id": 282,
+    "question": "Singer claims that his argument upsets the traditional distinction between:",
+    "choices": [
+      "duty and charity.",
+      "egoism and altruism.",
+      "rights and privileges.",
+      "positive and negative rights."
+    ],
+    "answer": 0,
+    "subject": "philosophy"
+  },
+  {
+    "id": 283,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I used his toothbrush to clean the toilet. Scenario 2 | I locked the prisoner in his cell for the night.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 1,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 284,
+    "question": "Which of the following is a benefit that mycorrhizal fungi confer to many plants?",
+    "choices": [
+      "They protect plant roots from desiccation in extremely dry habitats.",
+      "They fix nitrogen, which is particularly important for plants in nitrogen-limited habitats.",
+      "They provide access to phosphorus, an essential element that is limited in many kinds of soils.",
+      "They provide carbon to plants in exchange for fixed nitrogen."
+    ],
+    "answer": 2,
+    "subject": "college_biology"
+  },
+  {
+    "id": 285,
+    "question": "From what does a chain of command extend?",
+    "choices": [
+      "Bottom to top",
+      "Top to bottom",
+      "Diagonally",
+      "Laterally"
+    ],
+    "answer": 1,
+    "subject": "management"
+  },
+  {
+    "id": 286,
+    "question": "According to Esman (1972), which publics help an organization to exist by lending authority or assistance?",
+    "choices": [
+      "Enabling",
+      "Functional",
+      "Normative",
+      "Diffused"
+    ],
+    "answer": 0,
+    "subject": "public_relations"
+  },
+  {
+    "id": 287,
+    "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I did not wear a mask because I was not sick. Scenario 2 | I shared some raunchy photos of my sister to Facebook.",
+    "choices": [
+      "Wrong, Wrong",
+      "Wrong, Not wrong",
+      "Not wrong, Wrong",
+      "Not wrong, Not wrong"
+    ],
+    "answer": 2,
+    "subject": "moral_scenarios"
+  },
+  {
+    "id": 288,
+    "question": "An action potential involves the movement of",
+    "choices": [
+      "glucose into the axon",
+      "fats out of the axon terminal",
+      "molecules in the synaptic gap",
+      "sodium ions into the axon"
+    ],
+    "answer": 3,
+    "subject": "high_school_psychology"
+  },
+  {
+    "id": 289,
+    "question": "All of the following are examples of connective tissue EXCEPT",
+    "choices": [
+      "ligaments",
+      "muscle",
+      "blood",
+      "cartilage"
+    ],
+    "answer": 1,
+    "subject": "high_school_biology"
+  },
+  {
+    "id": 290,
+    "question": "To verify a digital signature we need the",
+    "choices": [
+      "Sender’s Private key",
+      "Sender’s Public key",
+      "Receiver’s Private key",
+      "Receiver’s Public key"
+    ],
+    "answer": 1,
+    "subject": "computer_security"
+  },
+  {
+    "id": 291,
+    "question": "The term 'assets' refers to:",
+    "choices": [
+      "the culturally valued commodities and standards of living that make the poor feel relatively deprived",
+      "the flow of money a person receives from their salary or wage",
+      "a stock of economic resources, including land, shares and bank deposits",
+      "the 'slices' of the population who own differing amounts of wealth"
+    ],
+    "answer": 2,
+    "subject": "sociology"
+  },
+  {
+    "id": 292,
+    "question": "According to Ross, justice is:",
+    "choices": [
+      "when all laws are followed.",
+      "when contracts and promises are adhered to.",
+      "when the distribution of happiness is in accordance with merit.",
+      "when the guilty are punished for their crimes."
+    ],
+    "answer": 2,
+    "subject": "philosophy"
+  },
+  {
+    "id": 293,
+    "question": "A defendant, a 14-year-old male, was tried as an adult for an armed robbery and was convicted. No one had been physically harmed during the robbery. In light of the defendant's lengthy juvenile criminal history, which included violent offenses, and the fact that armed robbery is a crime of violence, he was sentenced to life in prison without the possibility of parole. Did the life-without-parole sentence violate the Eighth Amendment ban on cruel and unusual punishment?",
+    "choices": [
+      "No, because a juvenile may be sentenced to life without parole if release would pose a danger to the community.",
+      "No, because the Eighth Amendment does not apply outside the context of capital punishment.",
+      "Yes, because a life-without-parole sentence is not permissible for a juvenile defendant convicted of a nonhomicide offense.",
+      "Yes, because a life-without-parole sentence is not permissible for an adult or juvenile defendant convicted of a nonviolent offense."
+    ],
+    "answer": 2,
+    "subject": "professional_law"
+  },
+  {
+    "id": 294,
+    "question": " Kant refers to the special worth or value of persons as",
+    "choices": [
+      "virtue.",
+      "beauty.",
+      "praiseworthiness.",
+      "dignity."
+    ],
+    "answer": 3,
+    "subject": "moral_disputes"
+  },
+  {
+    "id": 295,
+    "question": "Clinical infection by an arenavirus is characterised by which one of the following?",
+    "choices": [
+      "Pantropic infection",
+      "Signs of malaria",
+      "Short (2-3 days) incubation",
+      "Hepatitis"
+    ],
+    "answer": 0,
+    "subject": "virology"
+  },
+  {
+    "id": 296,
+    "question": "The state of being unable to make an informed, reasoned decision about a product purchase is known as?",
+    "choices": [
+      "Consumer inclusion",
+      "Consumer competence",
+      "Consumer exclusion",
+      "Consumer vulnerability"
+    ],
+    "answer": 3,
+    "subject": "business_ethics"
+  },
+  {
+    "id": 297,
+    "question": "Which of the following is an example of imprinting?",
+    "choices": [
+      "A mother eagle will fly under her young while they are learning to fly in case they begin to fall.",
+      "A newborn gosling will \"attach\" to the first moving object it sees, usually its mother.",
+      "An infant who is left by its primary caregivers for significant periods of time develops an indifference to their presence.",
+      "A mother cat teaches her kittens how to clean themselves."
+    ],
+    "answer": 1,
+    "subject": "high_school_psychology"
+  },
+  {
+    "id": 298,
+    "question": "For EDTA titrations, the analyte solution and the titrant solution are both buffered at the same pH for which of the following reasons?\nI. The conditional formation constant is affected by pH.\nII. The fraction of EDTA in the fully deprotonated Y4− form varies with pH.\nIII. When EDTA reacts to form a metal complex, H+ is a product in most cases.",
+    "choices": [
+      "I only",
+      "I and II only",
+      "I and III only",
+      "I, II, and III"
+    ],
+    "answer": 3,
+    "subject": "college_chemistry"
+  },
+  {
+    "id": 299,
+    "question": "Which of the following describes a core principle of the Constitution as it was written in 1787?",
+    "choices": [
+      "Direct democracy",
+      "Checks and balances",
+      "Equal representation",
+      "Unitary government"
+    ],
+    "answer": 1,
+    "subject": "high_school_government_and_politics"
   }
 ]
