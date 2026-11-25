@@ -113,16 +113,16 @@ All results can be regenerated from `results/results.csv` (one row per response,
 
 ## References
 
-AI Security Institute, UK. 2024. Inspect AI: Framework for Large Language Model Evaluations. Released May. https://github.com/UKGovernmentBEIS/inspect_ai.
+AI Security Institute, UK (2024). Inspect AI: Framework for large language model evaluations. GitHub. Available at: https://github.com/UKGovernmentBEIS/inspect_ai.
 
-Chen, Y., Benton, J., Radhakrishnan, A., Uesato, J., Denison, C., Schulman, J., Somani, A., Hase, P., Wagner, M., Fabien, R., Vlad, M., Bowman, S.R., Leike, J., Kaplan, J. and Perez, E. (2025). Reasoning models don’t always say what they think. arXiv. Available at: https://arxiv.org/abs/2505.05410v1 [Accessed 25 Nov. 2026].
+Chen, Y., Benton, J., Radhakrishnan, A., Uesato, J., Denison, C., Schulman, J., Somani, A., Hase, P., Wagner, M., Roger, F., Mikulik, V., Bowman, S.R., Leike, J., Kaplan, J. and Perez, E. (2025). Reasoning models don’t always say what they think. arXiv. Available at: https://arxiv.org/abs/2505.05410v1 [Accessed 25 Nov. 2026].
 
-Cohen, J. (1960) 'A Coefficient of Agreement for Nominal Scales', *Educational and Psychological Measurement*, 20(1), pp. 37-46.
+Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20(1), pp. 37-46.
 
-Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D. and Steinhardt, J. (2021) 'Measuring Massive Multitask Language Understanding', *International Conference on Learning Representations*. arXiv:2009.03300.
+Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D. and Steinhardt, J. (2021). Measuring massive multitask language understanding. International Conference on Learning Representations. Available at: https://arxiv.org/abs/2009.03300.
 
 Lanham, T., Chen, A., Radhakrishnan, A., Steiner, B., Denison, C., Hernandez, D., Li, D., Durmus, E., Hubinger, E., Kernion, J., Lukošiūtė, K., Nguyen, K., Cheng, N., Joseph, N., Schiefer, N., Rausch, O., Larson, R., McCandlish, S., Kundu, S., Kadavath, S., Yang, S., Henighan, T., Maxwell, T., Telleen-Lawton, T., Hume, T., Hatfield-Dodds, Z., Kaplan, J., Brauner, J., Bowman, S.R. and Perez, E. (2023). Measuring faithfulness in chain-of-thought reasoning. arXiv (Cornell University). doi:10.48550/arxiv.2307.13702.
 
-Turpin, M., Michael, J., Perez, E. and Bowman, S.R. (2023) 'Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting', *Advances in Neural Information Processing Systems*, 36. arXiv:2305.04388.
+Turpin, M., Michael, J., Perez, E. and Bowman, S.R. (2023). Language models don’t always say what they think: Unfaithful explanations in chain-of-thought prompting. Advances in Neural Information Processing Systems, 36. Available at: https://arxiv.org/abs/2305.04388.
 
-Wilson, E.B. (1927) 'Probable Inference, the Law of Succession, and Statistical Inference', *Journal of the American Statistical Association*, 22(158), pp. 209-212.
+Wilson, E.B. (1927). Probable inference, the law of succession, and statistical inference. Journal of the American Statistical Association, 22(158), pp. 209-212.
