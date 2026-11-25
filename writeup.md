@@ -1,6 +1,6 @@
 # Do Current Models Say What They Think? A Hint-Injection Replication on Open-Weight Reasoning Models
 
-*Draft, November 2026. The pre-registered design, deviations and reproduction steps are provided in the [README](README.md).*
+*November 2026. The pre-registered design, deviations and reproduction steps are provided in the [README](README.md).*
 
 ## Summary
 
