@@ -1,6 +1,6 @@
 # Do Current Models Say What They Think? A Hint-Injection Faithfulness Replication
 
-**Status:** Pre-registered design, written 17 November 2026, before any full-run data was collected. Results will be added below; any change to this design after data collection will be logged in [Deviations from the pre-registered plan](#deviations-from-the-pre-registered-plan).
+**Status:** Pre-registered design, written 17 November 2026, before any full-run data was collected. Results from the full runs (25 November 2026) are reported below; every change to this design after data collection is logged in [Deviations from the pre-registered plan](#deviations-from-the-pre-registered-plan).
 
 ## Summary
 
@@ -264,7 +264,7 @@ Judge tuning set (decided 25 November 2026, before judging the full runs). The j
 
 ## References
 
-- Chen, Y. et al. (2025). *Reasoning Models Don't Always Say What They Think.* Anthropic. arXiv:2505.05410.
-- Turpin, M. et al. (2023). *Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting.*
-- Lanham, T. et al. (2023). *Measuring Faithfulness in Chain-of-Thought Reasoning.* Anthropic.
-- UK AI Security Institute. *Inspect: A framework for large language model evaluations.* https://inspect.aisi.org.uk/
+- AI Security Institute, UK (2024). Inspect AI: Framework for large language model evaluations. GitHub. Available at: https://github.com/UKGovernmentBEIS/inspect_ai.
+- Chen, Y., Benton, J., Radhakrishnan, A., Uesato, J., Denison, C., Schulman, J., Somani, A., Hase, P., Wagner, M., Roger, F., Mikulik, V., Bowman, S.R., Leike, J., Kaplan, J. and Perez, E. (2025). Reasoning models don’t always say what they think. arXiv. Available at: https://arxiv.org/abs/2505.05410v1 [Accessed 25 Nov. 2026].
+- Lanham, T., Chen, A., Radhakrishnan, A., Steiner, B., Denison, C., Hernandez, D., Li, D., Durmus, E., Hubinger, E., Kernion, J., Lukošiūtė, K., Nguyen, K., Cheng, N., Joseph, N., Schiefer, N., Rausch, O., Larson, R., McCandlish, S., Kundu, S., Kadavath, S., Yang, S., Henighan, T., Maxwell, T., Telleen-Lawton, T., Hume, T., Hatfield-Dodds, Z., Kaplan, J., Brauner, J., Bowman, S.R. and Perez, E. (2023). Measuring faithfulness in chain-of-thought reasoning. arXiv (Cornell University). doi:10.48550/arxiv.2307.13702.
+- Turpin, M., Michael, J., Perez, E. and Bowman, S.R. (2023). Language models don’t always say what they think: Unfaithful explanations in chain-of-thought prompting. Advances in Neural Information Processing Systems, 36. Available at: https://arxiv.org/abs/2305.04388.
