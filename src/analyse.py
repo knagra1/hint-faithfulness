@@ -294,6 +294,124 @@ def print_report(out: list) -> None:
                   f"switch off {a['switch_rate']:.1%} vs on {b['switch_rate']:.1%}")
 
 
+CONFIG_LABELS = {"ds_off": "DeepSeek, reasoning off", "ds_on": "DeepSeek, reasoning on",
+                 "qw_off": "Qwen, reasoning off", "qw_on": "Qwen, reasoning on"}
+# Reference categorical palette slots 1-4 (fixed order) + a distinct marker per config.
+CONFIG_STYLE = {"ds_off": ("#257de0", "o"), "ds_on": ("#f47230", "s"),
+                "qw_off": ("#00b894", "D"), "qw_on": ("#f2a600", "^")}
+INK, INK2, GRID, AXIS = "#191919", "#666666", "#e7e7e7", "#c2c2c2"
+
+
+def _style_axes(ax) -> None:
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    for side in ("left", "bottom"):
+        ax.spines[side].set_color(AXIS)
+    ax.tick_params(colors=INK2, labelsize=9)
+    ax.yaxis.grid(True, color=GRID, linewidth=0.8)
+    ax.set_axisbelow(True)
+    ax.yaxis.set_major_formatter(lambda v, _p: f"{v:.0%}")
+
+
+def _dot_plot(out, key, ci_key, title, subtitle, path, ylim, chen_band=False) -> None:
+    import matplotlib.pyplot as plt
+
+    fig, ax = plt.subplots(figsize=(8, 4.6), dpi=200)
+    idx = {(r["config"], r["hint"]): r for r in out}
+    offsets = {c: (i - 1.5) * 0.17 for i, c in enumerate(CONFIG_ORDER)}
+    if chen_band:
+        ax.axhspan(0.25, 0.39, color="#efefef", zorder=0)
+        ax.text(2.45, 0.32, "Chen et al. (2025): 25–39%\n(other models; indicative only)",
+                color=INK2, fontsize=8, va="center", ha="right")
+    for cfg in CONFIG_ORDER:
+        color, marker = CONFIG_STYLE[cfg]
+        for x, hint in enumerate(HINT_ORDER):
+            r = idx[(cfg, hint)]
+            if r[key] != r[key]:
+                continue
+            lo, hi = r[ci_key]
+            xx = x + offsets[cfg]
+            ax.plot([xx, xx], [lo, hi], color=color, linewidth=2, solid_capstyle="round", zorder=2)
+            ax.plot(xx, r[key], marker=marker, markersize=8, zorder=3,
+                    markerfacecolor="white" if r["small"] else color,
+                    markeredgecolor=color, markeredgewidth=2, linestyle="none")
+            ax.text(xx, -0.045 * (ylim[1] - ylim[0]) + ylim[0], f"{r['switches']}", fontsize=7,
+                    color=INK2, ha="center", va="top")
+    ax.set_xticks(range(len(HINT_ORDER)), [h.capitalize() for h in HINT_ORDER])
+    ax.tick_params(axis="x", pad=14)
+    ax.set_xlim(-0.6, 2.6)
+    ax.set_ylim(*ylim)
+    _style_axes(ax)
+    handles = [plt.Line2D([], [], color=CONFIG_STYLE[c][0], marker=CONFIG_STYLE[c][1], markersize=7,
+                          linewidth=2, label=CONFIG_LABELS[c]) for c in CONFIG_ORDER]
+    handles.append(plt.Line2D([], [], color=INK2, marker="o", markerfacecolor="white", markersize=7,
+                              linestyle="none", label="hollow = fewer than 20 switches"))
+    ax.legend(handles=handles, frameon=False, fontsize=8, labelcolor=INK2, loc="upper left",
+              bbox_to_anchor=(1.0, 1.0))
+    fig.suptitle(title, x=0.01, ha="left", fontsize=12, color=INK, fontweight="bold")
+    ax.set_title(subtitle, loc="left", fontsize=9, color=INK2)
+    fig.text(0.01, 0.01, "Bars: 95% Wilson CIs. Small numbers under points: number of switches.",
+             fontsize=7.5, color=INK2)
+    fig.tight_layout(rect=(0, 0.03, 1, 1))
+    fig.savefig(path, facecolor="white")
+    plt.close(fig)
+
+
+def _on_off_plot(out, path) -> None:
+    import matplotlib.pyplot as plt
+
+    idx = {(r["config"], r["hint"]): r for r in out}
+    fig, axes = plt.subplots(1, 2, figsize=(8, 4), dpi=200)
+    panels = [("faith", "faith_ci", "Faithfulness (pooled across hints)", (0.5, 1.02)),
+              ("switch_rate", "switch_ci", "Switch rate (pooled across hints)", (0, 0.2))]
+    for ax, (key, ci_key, title, ylim) in zip(axes, panels):
+        for model, off, on in [("DeepSeek", "ds_off", "ds_on"), ("Qwen", "qw_off", "qw_on")]:
+            color = CONFIG_STYLE[off][0]
+            marker = CONFIG_STYLE[off][1]
+            ys = [idx[(off, "pooled")][key], idx[(on, "pooled")][key]]
+            cis = [idx[(off, "pooled")][ci_key], idx[(on, "pooled")][ci_key]]
+            dx = -0.04 if model == "DeepSeek" else 0.04
+            ax.plot([0 + dx, 1 + dx], ys, color=color, linewidth=2, marker=marker, markersize=8,
+                    label=model, zorder=3)
+            for x, (lo, hi) in zip([0, 1], cis):
+                ax.plot([x + dx, x + dx], [lo, hi], color=color, linewidth=1.2, alpha=0.6, zorder=2)
+            ax.text(1.1, ys[1], f"{model} {ys[1]:.0%}", color=INK, fontsize=8, va="center")
+            # off-side labels: DeepSeek below-left, Qwen above-left, so close values don't collide
+            vshift = -0.012 if model == "DeepSeek" else 0.012
+            ax.text(-0.1, ys[0] + vshift * (ylim[1] - ylim[0]) / 0.5, f"{ys[0]:.0%}", color=INK,
+                    fontsize=8, va="center", ha="right")
+        ax.set_xticks([0, 1], ["Reasoning off", "Reasoning on"])
+        ax.set_xlim(-0.4, 1.6)
+        ax.set_ylim(*ylim)
+        ax.set_yticks([t / 100 for t in range(int(ylim[0] * 100), int(ylim[1] * 100) + 1,
+                                              10 if key == "faith" else 5)])
+        ax.set_title(title, loc="left", fontsize=9.5, color=INK)
+        _style_axes(ax)
+    axes[0].legend(frameon=False, fontsize=8, labelcolor=INK2, loc="lower left")
+    fig.suptitle("Reasoning on vs off, within each model", x=0.01, ha="left", fontsize=12,
+                 color=INK, fontweight="bold")
+    fig.text(0.01, 0.01, "Thin bars: 95% Wilson CIs. Pooled CIs treat the three hint conditions as "
+             "independent, so they are somewhat too narrow.", fontsize=7.5, color=INK2)
+    fig.tight_layout(rect=(0, 0.04, 1, 1))
+    fig.savefig(path, facecolor="white")
+    plt.close(fig)
+
+
+def figures(out: list) -> None:
+    import matplotlib
+
+    matplotlib.use("Agg")
+    res = ROOT / "results"
+    _dot_plot(out, "switch_rate", "switch_ci", "How often the hint changed the answer",
+              "Switch rate among eligible questions (hint points to a wrong answer)",
+              res / "fig1_switch_rate.png", (0, 0.3))
+    _dot_plot(out, "faith", "faith_ci", "How often the reasoning credits the hint",
+              "Faithfulness among switched responses (LLM judge; no-reasoning switches excluded)",
+              res / "fig2_faithfulness.png", (0, 1.05), chen_band=True)
+    _on_off_plot(out, res / "fig3_reasoning_on_off.png")
+    print("Wrote results/fig1_switch_rate.png, fig2_faithfulness.png, fig3_reasoning_on_off.png")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "export":
@@ -304,5 +422,7 @@ if __name__ == "__main__":
         validate()
     elif cmd == "report":
         print_report(report())
+    elif cmd == "figures":
+        figures(report())
     else:
         print(__doc__)
