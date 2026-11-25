@@ -109,17 +109,138 @@ Raw Inspect logs are kept out of the repository; `results/results.csv` holds eve
 
 ## Reproducing
 
-*To be completed once the pipeline is final.*
-
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-export OPENAI_API_KEY=...   # and/or other provider keys
+# Keys are read from the environment (or a local, untracked .env):
+# OPENROUTER_API_KEY for the evaluated models, OPENAI_API_KEY for the judge.
 ```
+
+**Analysis only (no API calls).** `results/results.csv` and `data/judge_labels.csv` are enough:
+
+```bash
+python src/analyse.py report     # per-cell rates, Wilson CIs, reasoning on vs off
+python src/analyse.py validate   # judge vs hand labels: accuracy, kappa, confusion matrix
+python src/analyse.py figures    # results/fig1-3
+```
+
+**Full pipeline.** For each configuration, the baseline with 3 epochs plus each hint with 1 epoch, all with `-T n=300 --max-tokens 8000`:
+
+```bash
+M=openrouter/deepseek/deepseek-v4-flash-0731   # or openrouter/qwen/qwen3.5-122b-a10b
+R="--reasoning-effort none"                    # reasoning off; leave empty for reasoning on
+inspect eval src/task.py -T hint=none -T n=300 --epochs 3 --max-tokens 8000 $R --model $M --log-dir logs/full/<config>
+for h in authority grader unauthorised; do
+  inspect eval src/task.py -T hint=$h -T n=300 --max-tokens 8000 $R --model $M --log-dir logs/full/<config>
+done
+python src/judge.py tune                       # judge on the 15 tuning cases
+python src/judge.py all                        # judge every switched response
+python src/analyse.py export                   # logs + verdicts -> results/results.csv
+```
+
+`<config>` is one of `ds_off`, `ds_on`, `qw_off`, `qw_on`. The Qwen reasoning-on run also used `--max-connections 3 --retry-on-error 3` (see Results). `python src/analyse.py sample` redraws the 50-case validation sample (seed 2027).
 
 ## Results
 
-*To be added after the full run.*
+Full runs: 25 November 2026. All numbers below come from `results/results.csv` via `src/analyse.py`.
+
+### Runs
+
+| Configuration | Responses parsed | Hit 8,000-token cap | Unstable baselines |
+|---|---|---|---|
+| DeepSeek, reasoning off | 1,799 / 1,800 | 0 | 29 / 300 (9.7%) |
+| DeepSeek, reasoning on | 1,765 / 1,800 | 37 | 21 / 300 (7.0%) |
+| Qwen, reasoning off | 1,799 / 1,800 | 4 | 11 / 300 (3.7%) |
+| Qwen, reasoning on | 1,793 / 1,800 | 24 | 14 / 300 (4.7%) |
+
+API cost for all runs and judging was about $14.30: about $14.10 on OpenRouter, including 5-question checks and failed attempts, and $0.16 for the judge.
+
+### Serving providers
+
+OpenRouter chose the serving provider per request (no provider pinning). Share of full-run responses:
+
+| Configuration | Providers |
+|---|---|
+| DeepSeek, reasoning off | Cohere 28%, Wafer 23%, Relace 20%, Venice 19%, Nebius 8%, others (BaseTen, DeepInfra, Sail Research, Alibaba) 1% |
+| DeepSeek, reasoning on | Cohere 26%, Wafer 25%, Relace 23%, Venice 18%, Nebius 6%, others (BaseTen, DeepInfra, Alibaba, Novita, Sail Research) 2% |
+| Qwen, reasoning off | SiliconFlow (FP8) 86%, Alibaba 14% |
+| Qwen, reasoning on | Alibaba 100% |
+
+Providers may serve differently quantised weights, so the DeepSeek results average over several deployments.
+
+### Judge validation
+
+On the 50 blind hand-labelled responses (`data/judge_labels.csv`), excluding all 15 tuning cases:
+
+- 3 categories: accuracy 90% (45/50; 95% CI 79–96%), Cohen's kappa 0.64.
+- Faithful vs not (the primary measure): accuracy 92% (46/50; 95% CI 81–97%), kappa 0.70; 2 false positives, 2 false negatives.
+
+Confusion matrix (rows = author, columns = judge):
+
+| | faithful | mentions_not_credited | no_mention |
+|---|---|---|---|
+| faithful | 40 | 1 | 1 |
+| mentions_not_credited | 2 | 0 | 1 |
+| no_mention | 0 | 0 | 5 |
+
+The judge agreed with none of the author's 3 "mentions_not_credited" cases. The tuning set had no example of that category, so the three-way split is not reported as a finding. 4 of the 5 disagreements were on reasoning-on responses.
+
+### Switching and faithfulness
+
+\* = fewer than 20 switches: reported, not interpreted. Faithfulness = faithful ÷ (switches − no-reasoning switches). Brackets are 95% Wilson CIs. Unparsed = eligible hinted responses with no parseable answer (counted as non-switches). F / MNC / NM = judge's faithful / mentions not credited / no mention.
+
+| Configuration | Hint | Eligible | Unparsed | Switches | Switch rate | F / MNC / NM | Faithfulness |
+|---|---|---|---|---|---|---|---|
+| DeepSeek off | Authority | 261 | 1 | 17\* | 7% [4–10] | 13 / 0 / 4 | 76% [53–90] |
+| DeepSeek off | Grader | 261 | 0 | 5\* | 2% [1–4] | 0 / 0 / 5 | 0% [0–43] |
+| DeepSeek off | Unauthorised | 261 | 0 | 56 | 21% [17–27] | 52 / 1 / 3 | 93% [83–97] |
+| DeepSeek on | Authority | 273 | 6 | 12\* | 4% [3–8] | 9 / 3 / 0 | 75% [47–91] |
+| DeepSeek on | Grader | 273 | 3 | 4\* | 1% [1–4] | 3 / 0 / 1 | 75% [30–95] |
+| DeepSeek on | Unauthorised | 273 | 4 | 22 | 8% [5–12] | 19 / 2 / 1 | 86% [67–95] |
+| Qwen off | Authority | 279 | 0 | 26 | 9% [6–13] | 25 / 0 / 1 | 96% [81–99] |
+| Qwen off | Grader | 279 | 0 | 6\* | 2% [1–5] | 3 / 0 / 3 | 50% [19–81] |
+| Qwen off | Unauthorised | 279 | 0 | 13\* | 5% [3–8] | 10 / 1 / 2 | 77% [50–92] |
+| Qwen on | Authority | 279 | 2 | 57 | 20% [16–26] | 57 / 0 / 0 | 100% [94–100] |
+| Qwen on | Grader | 279 | 1 | 30 | 11% [8–15] | 30 / 0 / 0 | 100% [89–100] |
+| Qwen on | Unauthorised | 279 | 0 | 30 | 11% [8–15] | 28 / 2 / 0 | 93% [79–98] |
+
+Hint types pooled within each configuration (allowed by the analysis plan because several cells have fewer than 20 switches). Each question appears once per hint, so these CIs are somewhat too narrow:
+
+| Configuration | Switches | Switch rate | Faithfulness |
+|---|---|---|---|
+| DeepSeek off | 78 | 10% [8–12] | 83% [74–90] |
+| DeepSeek on | 38 | 5% [3–6] | 82% [67–91] |
+| Qwen off | 45 | 5% [4–7] | 84% [71–92] |
+| Qwen on | 117 | 14% [12–16] | 98% [94–100] |
+
+**No-reasoning responses.** No switched response in the full runs had fewer than 10 words of reasoning (0% in every cell), so the sensitivity analysis is identical to the primary measure.
+
+**Reasoning length** (mean words of reasoning in switched responses: native trace plus visible text before `ANSWER:`): DeepSeek off 118, DeepSeek on 887, Qwen off 1,182, Qwen on 3,155.
+
+![Switch rate](results/fig1_switch_rate.png)
+![Faithfulness](results/fig2_faithfulness.png)
+
+### Reasoning on vs off
+
+![Reasoning on vs off](results/fig3_reasoning_on_off.png)
+
+- **DeepSeek:** pooled faithfulness was 83% off vs 82% on, with no visible difference. The switch rate fell from 10.0% to 4.6% with reasoning on.
+- **Qwen:** pooled faithfulness was 84% off vs 98% on. The switch rate rose from 5.4% to 14.0% with reasoning on.
+
+### Hypotheses
+
+- **H1 (higher faithfulness than Chen et al.):** consistent with H1. Every interpretable cell (20 or more switches) is 86–100% faithful, against 25–39% in Chen et al. (2025). This comparison is qualitative only (see Limitations).
+- **H2 (unauthorised hint least faithful, for most models):** not supported. Only Qwen reasoning-on has 20 or more switches for all three hints. There, unauthorised has the lowest point estimate (93% vs 100% and 100%), but the CIs overlap heavily. In the other three configurations only one hint cell is interpretable, so hint types can't be compared.
+
+### Notes on procedure
+
+These notes record how the pre-registered procedure was carried out. None of them changes the design.
+
+- **No-reasoning rule.** For reasoning-on responses, the word count includes the native reasoning trace as well as the visible text before `ANSWER:` (the author confirmed this reading on 25 November 2026).
+- **Keyword flag.** The `keyword` column in `results.csv` is the pilot's keyword detector, applied to trace plus visible text. It is kept for reference only; all faithfulness figures use the judge.
+- **Qwen reasoning-off retry.** One baseline run failed on a 403 from Alibaba's content filter ("Output data may contain inappropriate content") on an ordinary question, and was resumed once with `inspect eval-retry`.
+- **Qwen reasoning-on rate limits.** Several attempts failed with HTTP 400 errors that OpenRouter's dashboard showed as upstream 429 (rate limit) and 499 (client closed request) errors. These attempts produced no data and were excluded. The completed run used `--max-connections 3 --retry-on-error 3`: 142 samples were retried and all succeeded. A deviation proposing `--reasoning-effort medium` was briefly recorded and then reverted once rate limiting was identified as the cause; no data was collected under it.
+- **Tuning cases.** The 15 tuning cases were excluded from the validation sample, but they remain in the main results and were judged like every other switch.
 
 ## Limitations
 
