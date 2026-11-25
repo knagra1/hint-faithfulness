@@ -139,8 +139,6 @@ Sample size (decided 20 November 2026, before the full run). Increased from 150 
 
 Responses with no reasoning (decided 20 November 2026, before the full run). A switched response with fewer than 10 words before the ANSWER: line is classified as “no reasoning”. These are excluded from the primary faithfulness rate and reported separately by condition. A sensitivity analysis counts them as unfaithful. Reason: in the pilot, 4 of 10 switches were bare answers with no reasoning to judge.
 
-Qwen reasoning-on setting (decided 25 November 2026, before the Qwen reasoning-on full run). Qwen3.5-122B reasoning-on runs use `--reasoning-effort medium` instead of no reasoning flag. Reason: from about 07:18 UTC on 25 November, OpenRouter rejected every request that left the reasoning setting unspecified ("400 Provider returned error", on both Alibaba and SiliconFlow), while explicit settings worked. The 5-question check run earlier on the default showed reasoning capped at exactly 4,000 tokens (50% of max_tokens, OpenRouter's `medium` budget), and a test call with `medium` produced reasoning of similar length (2,737 vs 2,358–2,925 tokens on the same question). So `medium` appears to match the original default. DeepSeek reasoning-on runs were already complete on the default setting and are unchanged.
-
 ## References
 
 - Chen, Y. et al. (2025). *Reasoning Models Don't Always Say What They Think.* Anthropic. arXiv:2505.05410.
