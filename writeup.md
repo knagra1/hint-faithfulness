@@ -33,7 +33,7 @@ Because the hinted answer is always wrong, a switch to it cannot be explained by
 
 ### 2.2 Models
 
-DeepSeek V4 Flash and Qwen3.5-122B-A10B were accessed through OpenRouter and run using Inspect (UK AI Security Institute, n.d.). Each model was tested with native reasoning on, where the full reasoning trace is returned, and with reasoning off, where the model is prompted to reason step by step in its visible response. Open-weight models were chosen because OpenAI encrypts and Anthropic summarises their reasoning traces, which prevents those traces from being judged. Comparing reasoning on and off within the same model also removes differences between models as a confound.
+DeepSeek V4 Flash and Qwen3.5-122B-A10B were accessed through OpenRouter and run using Inspect (AI Security Institute, 2024). Each model was tested with native reasoning on, where the full reasoning trace is returned, and with reasoning off, where the model is prompted to reason step by step in its visible response. Open-weight models were chosen because OpenAI encrypts and Anthropic summarises their reasoning traces, which prevents those traces from being judged. Comparing reasoning on and off within the same model also removes differences between models as a confound.
 
 ### 2.3 Measuring Faithfulness
 
@@ -113,16 +113,15 @@ All results can be regenerated from `results/results.csv` (one row per response,
 
 ## References
 
-Chen, Y. et al. (2025) 'Reasoning Models Don't Always Say What They Think', arXiv preprint arXiv:2505.05410.
+AI Security Institute, UK. 2024. Inspect AI: Framework for Large Language Model Evaluations. Released May. https://github.com/UKGovernmentBEIS/inspect_ai.
+
+Chen, Y., Benton, J., Radhakrishnan, A., Uesato, J., Denison, C., Schulman, J., Somani, A., Hase, P., Wagner, M., Fabien, R., Vlad, M., Bowman, S.R., Leike, J., Kaplan, J. and Perez, E. (2025). Reasoning models don’t always say what they think. arXiv. Available at: https://arxiv.org/abs/2505.05410v1 [Accessed 25 Nov. 2026].
 
 Cohen, J. (1960) 'A Coefficient of Agreement for Nominal Scales', *Educational and Psychological Measurement*, 20(1), pp. 37-46.
 
 Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D. and Steinhardt, J. (2021) 'Measuring Massive Multitask Language Understanding', *International Conference on Learning Representations*. arXiv:2009.03300.
 
-Lanham, T. et al. (2023) 'Measuring Faithfulness in Chain-of-Thought Reasoning', arXiv preprint arXiv:2307.13702.
+Lanham, T., Chen, A., Radhakrishnan, A., Steiner, B., Denison, C., Hernandez, D., Li, D., Durmus, E., Hubinger, E., Kernion, J., Lukošiūtė, K., Nguyen, K., Cheng, N., Joseph, N., Schiefer, N., Rausch, O., Larson, R., McCandlish, S., Kundu, S., Kadavath, S., Yang, S., Henighan, T., Maxwell, T., Telleen-Lawton, T., Hume, T., Hatfield-Dodds, Z., Kaplan, J., Brauner, J., Bowman, S.R. and Perez, E. (2023). Measuring faithfulness in chain-of-thought reasoning. arXiv (Cornell University). doi:10.48550/arxiv.2307.13702.
 
 Turpin, M., Michael, J., Perez, E. and Bowman, S.R. (2023) 'Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting', *Advances in Neural Information Processing Systems*, 36. arXiv:2305.04388.
-
-UK AI Security Institute (n.d.) *Inspect: A framework for large language model evaluations*. [online] Available at: https://inspect.aisi.org.uk/.
-
 Wilson, E.B. (1927) 'Probable Inference, the Law of Succession, and Statistical Inference', *Journal of the American Statistical Association*, 22(158), pp. 209-212.
