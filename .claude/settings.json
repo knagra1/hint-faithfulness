@@ -1,7 +1,13 @@
 {
   "permissions": {
-    "deny": [
-      "Read(./.env)"
+    "deny": ["Read(./.env)"],
+    "allow": [
+      "Bash(inspect eval *)",
+      "Bash(python src/*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git status)",
+      "Bash(git diff *)"
     ]
   }
 }
