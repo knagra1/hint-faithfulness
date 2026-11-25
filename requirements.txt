@@ -1,3 +1,4 @@
 inspect-ai
 datasets
 openai
+matplotlib
