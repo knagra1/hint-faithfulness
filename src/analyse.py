@@ -1,8 +1,10 @@
 """Build results/results.csv and analyse it.
 
     python src/analyse.py export     logs/full + judge verdicts -> results/results.csv
-    python src/analyse.py sample     draw the 50-case blind validation sample
                                      (one row per response, no raw text)
+    python src/analyse.py sample     draw the 50-case blind validation sample
+    python src/analyse.py validate   judge vs hand labels: accuracy, Cohen's kappa, confusion
+                                     (reads only results/results.csv and data/judge_labels.csv)
 
 Definitions (README): a stable baseline is the same parseable answer in all 3 baseline runs;
 an eligible question has a stable baseline that is not the hinted letter; a switch is an
@@ -145,11 +147,60 @@ def sample_validation() -> None:
     print(f"Wrote {PACKET} and {LABELS}; cases per cell: {take}")
 
 
+def cohen_kappa(pairs: list) -> float:
+    n = len(pairs)
+    cats = sorted({c for p in pairs for c in p})
+    po = sum(a == b for a, b in pairs) / n
+    pe = sum((sum(a == c for a, _ in pairs) / n) * (sum(b == c for _, b in pairs) / n) for c in cats)
+    return (po - pe) / (1 - pe) if pe < 1 else float("nan")
+
+
+def validate() -> None:
+    """Compare judge categories (results.csv) with the author's blind labels."""
+    judge = {}
+    with RESULTS.open() as f:
+        for r in csv.DictReader(f):
+            if r["switched"] == "1":
+                judge[(r["config"], r["hint"], r["question_id"])] = r["judge_category"]
+    with LABELS.open() as f:
+        labels = list(csv.DictReader(f))
+    pairs, rows = [], []
+    for r in labels:
+        j = judge[(r["config"], r["hint"], r["question_id"])]
+        pairs.append((r["my_label"].strip(), j))
+        rows.append((r["case_id"], r["config"], r["hint"], r["question_id"], r["my_label"].strip(), j))
+    n = len(pairs)
+    cats = ["faithful", "mentions_not_credited", "no_mention", "no_reasoning"]
+    cats = [c for c in cats if any(c in p for p in pairs)]
+
+    acc = sum(a == b for a, b in pairs) / n
+    print(f"3-category: n={n}, accuracy={acc:.1%} ({sum(a == b for a, b in pairs)}/{n}), "
+          f"Cohen's kappa={cohen_kappa(pairs):.3f}")
+    print("\nConfusion matrix (rows = author, columns = judge):")
+    w = max(len(c) for c in cats) + 2
+    print(" " * w + "".join(c[:w - 1].rjust(w) for c in cats))
+    for a in cats:
+        print(a.ljust(w) + "".join(str(sum(p == (a, b) for p in pairs)).rjust(w) for b in cats))
+
+    binp = [(a == "faithful", b == "faithful") for a, b in pairs]
+    fp = sum(1 for a, b in binp if b and not a)
+    fn = sum(1 for a, b in binp if a and not b)
+    bacc = sum(a == b for a, b in binp) / n
+    print(f"\nBinary (faithful vs not; primary measure): accuracy={bacc:.1%}, "
+          f"kappa={cohen_kappa(binp):.3f}, judge false positives={fp}, false negatives={fn}")
+    print("\nDisagreements:")
+    for row in rows:
+        if row[4] != row[5]:
+            print(f"  case {row[0]}: {row[1]}/{row[2]}/q{row[3]}  author={row[4]}  judge={row[5]}")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "export":
         export()
     elif cmd == "sample":
         sample_validation()
+    elif cmd == "validate":
+        validate()
     else:
         print(__doc__)
